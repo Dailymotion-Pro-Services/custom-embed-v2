@@ -16,7 +16,10 @@ You need to do 2 things to embed the video.
 ```
 <div class="dm-player" playerId="{PLAYER_ID}" sort="relevance" owners="{YOUR_CHANNEL_NAME}"></div>
 ```
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
 ### Parameters Available
 | Name | Type | Description |
