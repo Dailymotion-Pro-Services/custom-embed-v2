@@ -41,7 +41,7 @@ You need to do 2 things to embed the video.
 
 
 
-**How to write it on code**
+**Examaple :**
 ```
 <div class="dm-player"
    playerId="xxxx"
