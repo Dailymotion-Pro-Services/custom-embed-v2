@@ -38,3 +38,28 @@ You need to do 2 things to embed the video.
 | startDate | string | Set a start date to find a video. You should follow this format "YYYY-MM-DD" e.g. "2020-04-01" |
 | videoId | string | Set video xid directly to the tag |
 | blockKeywords | string[] |  to block keywords It can be use. To put more than 1 word you can separate by `","` |
+
+
+
+**How to write it on code**
+```
+<div class="dm-player"
+   playerId="xxxx"
+   sort="relevance,recent"
+   owners="yourchannelname"
+   category="categoryname"
+   excludeIds="xxxid,xyxid"
+   searchInPlaylist="xxpid"
+   syndication="1234567"
+   adsParams="contextual"
+   keywordsSelector="meta[name='keywords']"
+   rangeDay="30,0"
+   preVideoTitle="See also:"
+   showVideoTitle="true"
+   showInfoCard="true"
+   showOutsidePlaylist="false"
+   startDate="2020-04-01"
+   videoId="x7webup"
+   blockKeywords="restricted,keywords,here"
+></div>
+```
