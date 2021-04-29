@@ -18,6 +18,7 @@ You need to do 2 things to embed the video.
 ```
 
 ### Parameters Available
+
 | Name | Type | Description |
 | --- | --- | --- |
 | PlayerId `Madatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/dm/partner/onboarding) in the player tab, inside the embed menu. |
