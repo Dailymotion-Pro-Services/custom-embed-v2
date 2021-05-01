@@ -13,13 +13,6 @@ You need to do 2 things to embed the Player.
 <script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 </body>
 ```
-or you can put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) in `header` with `async` attribute.
-```ruby
-...
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js" async></script>
-</header>
-...
-```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 
 
