@@ -16,7 +16,7 @@ You need to do 2 things to embed the Player.
 or you can put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) in `header` with `async` attribute.
 ```
 ...
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>`
+<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js" async></script>`
 </header>
 ...
 ```
