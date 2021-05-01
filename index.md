@@ -10,13 +10,13 @@ You need to do 2 things to embed the Player.
 1. Put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) at the very bottom before `body` end in your website
 ```ruby
 ...
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>`
+<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 </body>
 ```
 or you can put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) in `header` with `async` attribute.
 ```ruby
 ...
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js" async></script>`
+<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js" async></script>
 </header>
 ...
 ```
