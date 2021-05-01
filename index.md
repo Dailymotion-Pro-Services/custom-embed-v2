@@ -5,10 +5,23 @@ To use custom embed you must create player first through [Partner HQ](https://ww
 
 ### Start Embedding
 
-You need to do 2 things to embed the video.
+You need to do 2 things to embed the Player.
 
-1. Put the script at the very bottom before `body` end in your website `<script src="`[//srvr.dmvs-apac.com/v2/dm-ce.min.js](//srvr.dmvs-apac.com/v2/dm-ce.min.js)`"></script>`. Or you can load asynchronously in `header` by using `async` attribute.
-2. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article. We will show a sample below.
+1. Put the script at the very bottom before `body` end in your website or you can put the script in `header` with `async` attribute.
+Example :
+```
+...
+<script src="`[//srvr.dmvs-apac.com/v2/dm-ce.min.js](//srvr.dmvs-apac.com/v2/dm-ce.min.js)`"></script>`
+</body>
+```
+or
+```
+...
+<script src="`[//srvr.dmvs-apac.com/v2/dm-ce.min.js](//srvr.dmvs-apac.com/v2/dm-ce.min.js)`"></script>`
+</header>
+...
+```
+3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 
 
 ### Standard Embed Tag
