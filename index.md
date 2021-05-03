@@ -64,6 +64,7 @@ You need to do 2 things to embed the Player.
    showOutsidePlaylist="false"
    startDate="2020-04-01"
    videoId="x7webup"
+   playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
 ></div>
 ```
