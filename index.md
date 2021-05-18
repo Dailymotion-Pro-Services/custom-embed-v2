@@ -42,6 +42,7 @@ You need to do 2 things to embed the Player.
 | showOutsidePlaylist | boolean | Showing the video recommendations playlist outside of the player. By default, the value is `false` and the playlist is inside the video player. |
 | startDate | string | Set a start date to find a video. You should follow this format "YYYY-MM-DD" e.g. "2020-04-01" |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
+| mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 
 
 
