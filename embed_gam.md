@@ -13,4 +13,4 @@ tw.document.body.appendChild(dmScript);
 </script>
 ```
 
-**Important Note**: The above script will actually help to create Dailymotion CE outside of GAM iframe. Hence the player will render with no iframe as wrapper. For normal CE you can check [Guide Step by Step](https://github.com/DMVS-APAC/dm-custom-embed/wiki/Guide-Step-by-Step) and the available parameters for player you can check [Parameters Available](https://github.com/DMVS-APAC/dm-custom-embed/wiki/Parameters-Available)
+**Important Note**: The above script will actually help to create Dailymotion CE outside of GAM iframe. Hence the player will render with no iframe as wrapper. For normal CE you can check [v2 documentation](https://dmvs-apac.github.io/custom-embed-v2/)
