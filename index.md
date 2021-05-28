@@ -46,7 +46,7 @@ You need to do 2 things to embed the Player.
 
 
 
-**Examaple :**
+**Example :**
 ```
 <div class="dm-player"
    playerId="xxxx"
