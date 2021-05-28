@@ -2,7 +2,7 @@
 As GAM embed integration process happen through iframe ( friendly iframe ). Dailymotion CE can be done in same way. You can add a new script tag in GAM as ad code.
 Here is the example code.
 
-```
+```html
 <script>
 var tw = window.top, sfe = window.frameElement,dmScript;
 sfe.parentNode.insertAdjacentHTML("beforeBegin", "<div class='dm-player' playerId="{PLAYER_ID}" sort="recent" owners="{YOUR_CHANNEL_NAME}" >");
