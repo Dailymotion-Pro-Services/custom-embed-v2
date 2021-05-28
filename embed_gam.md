@@ -5,7 +5,7 @@ Here is the example code.
 ```
 <script>
 var tw = window.top, sfe = window.frameElement,dmScript;
-sfe.parentNode.insertAdjacentHTML("beforeBegin", "<div class='dm-player' cpeId='5df6e56e3e8c0962957f6a76' sort='recent' owners='yourchannelname' >");
+sfe.parentNode.insertAdjacentHTML("beforeBegin", "<div class='dm-player' playerId="{PLAYER_ID}" sort="recent" owners="{YOUR_CHANNEL_NAME}" >");
 dmScript= document.createElement('script');
 dmScript.type = 'text/javascript';
 dmScript.src = 'https://srvr.dmvs-apac.com/v2/dm-ce.min.js';
