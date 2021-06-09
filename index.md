@@ -70,7 +70,7 @@ You need to do 2 things to embed the Player.
 ></div>
 ```
 
-### PiP customisation
+### PIP customisation
 
 The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection [here](https://codepen.io/collection/NqPeEy).
 
@@ -106,7 +106,7 @@ Add the !important keyword to all your custom CSS rules in order to override alr
   top: initial !important;
 }
 ```
-#### Customizing PiP look and feel on all viewports 
+#### Customizing PIP look and feel on all viewports 
 You can add any rule to deep customize the PiP look and feel. For example by removing the frame shadow as follow.
 ```
 #dailymotion-pip-large-viewport,
@@ -114,7 +114,7 @@ You can add any rule to deep customize the PiP look and feel. For example by rem
   box-shadow: none !important;
 }
 ```
-#### Customizing PiP dynamic position
+#### Customizing PIP dynamic position
 You can dynamically change the PIP position based on your requirments. For example - PIP in mobile can overlay unfolded/extended menu. By using menu function based on the page, PIP can be changed dynamically. Check out below some example pages.
 
 ### Example Links
