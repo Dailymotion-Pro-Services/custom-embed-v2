@@ -118,9 +118,9 @@ You can add any rule to deep customize the PiP look and feel. For example by rem
 You can dynamically change the PIP position based on your requirments. For example - PIP in mobile can overlay unfolded/extended menu. By using menu function based on the page, PIP can be changed dynamically. Check out below some example pages.
 
 ### Example Links
-- (PIP simple menu)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/]
-- (PIP overlay menu)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_overlay_menu/]
-- (PIP dynamic postion)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_dynamic_position/]
+- [PIP simple menu](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/)
+- [PIP overlay menu](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_overlay_menu/)
+- [PIP dynamic postion](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_dynamic_position/)
 
 
 
