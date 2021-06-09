@@ -72,7 +72,7 @@ You need to do 2 things to embed the Player.
 
 ### PiP customisation
 
-The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection (here)[https://codepen.io/collection/NqPeEy].
+The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection [here](https://codepen.io/collection/NqPeEy).
 
 - `dailymotion-pip-large-viewport` targets PiP for “corner displaying” on large viewports
 - `dailymotion-pip-small-viewport` targets PiP for “sticky displaying” on small viewports
