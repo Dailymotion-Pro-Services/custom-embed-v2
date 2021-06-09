@@ -46,7 +46,7 @@ You need to do 2 things to embed the Player.
 
 
 
-**Example :**
+**Embed Example :**
 ```
 <div class="dm-player"
    playerId="xxxx"
@@ -69,3 +69,58 @@ You need to do 2 things to embed the Player.
    blockKeywords="restricted,keywords,here"
 ></div>
 ```
+
+### PiP customisation
+
+The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection (here)[https://codepen.io/collection/NqPeEy].
+
+- `dailymotion-pip-large-viewport` targets PiP for “corner displaying” on large viewports
+- `dailymotion-pip-small-viewport` targets PiP for “sticky displaying” on small viewports
+Add the !important keyword to all your custom CSS rules in order to override already existing styles and behaviors, you will find below some common customization examples.
+
+#### Reposition PIP desktop - top right
+```
+#dailymotion-pip-large-viewport {
+  right: 0 !important;
+  top: 0 !important;
+}
+```
+#### Reposition PIP desktop - bottom left without margin
+```
+#dailymotion-pip-large-viewport {
+  bottom: 0 !important;
+  margin: 0 !important;
+  left: 0 !important;
+}
+```
+#### Reposition PIP mobile - below menu bar
+```
+#dailymotion-pip-small-viewport {
+  top: 50px !important;
+}
+```
+#### Reposition PIP mobile - bottom of the page
+```
+#dailymotion-pip-small-viewport {
+  bottom: 0px !important;
+  top: initial !important;
+}
+```
+#### Customizing PiP look and feel on all viewports 
+You can add any rule to deep customize the PiP look and feel. For example by removing the frame shadow as follow.
+```
+#dailymotion-pip-large-viewport,
+#dailymotion-pip-small-viewport {
+  box-shadow: none !important;
+}
+```
+#### Customizing PiP dynamic position
+You can dynamically change the PIP position based on your requirments. For example - PIP in mobile can overlay unfolded/extended menu. By using menu function based on the page, PIP can be changed dynamically. Check out below some example pages.
+
+### Example Links
+- (PIP simple menu)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/]
+- (PIP overlay menu)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_overlay_menu/]
+- (PIP dynamic postion)[https://dmvs-apac.github.io/custom-embed-v2/examples/pip_dynamic_position/]
+
+
+
