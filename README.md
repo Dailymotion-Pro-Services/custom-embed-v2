@@ -3,7 +3,7 @@
 A version 2 Custom Embed new player
 
 
-## Quick Links
+## Documentation Links
 
-- Custom Embed Documentation
-- Embed through GAM
+- [Custom Embed Solution](https://dmvs-apac.github.io/custom-embed-v2/)
+- [Embed through GAM](https://dmvs-apac.github.io/custom-embed-v2/embed_gam)
