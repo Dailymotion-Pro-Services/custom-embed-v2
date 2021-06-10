@@ -7,3 +7,4 @@ A version 2 Custom Embed new player
 
 - [Custom Embed Solution](https://dmvs-apac.github.io/custom-embed-v2/)
 - [Embed through GAM](https://dmvs-apac.github.io/custom-embed-v2/embed_gam)
+- [React - Custom Embed Solution](https://www.npmjs.com/package/@dmvs-apac/dm-custom-embed-react)
