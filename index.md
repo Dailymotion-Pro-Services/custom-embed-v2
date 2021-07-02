@@ -33,6 +33,7 @@ You need to do 2 things to embed the Player.
 | searchInPlaylist | string | provide playlist xid to search videos within the playlist |
 | syndication | string | Syndication key. Needed if the video content does not belong to your channel / network of channels AND/OR if you embed the Dailymotion video player into specific 3rd party environments (Google AMP, Facebook IA, OTT products, in-app, operated but not owned web domains...). This enables tracking and targeting. |
 | adsParams | string | To add custom ad prameters |
+| referrerPolicy | string | The Referrer-Policy HTTP header controls how much referrer information (sent via the Referer header) should be included with requests. You can read more on this [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) documentation. |
 | language | string | Language of the video if you want to target specific languages only for a website. List of available values here: https://developer.dailymotion.com/api/partners#languages |
 | keywordsSelector | string | Define which meta tag you will use for the contextual embed. If you leave it blank it will get the `<h1>` the words in the meta tag will be chunked, sanitized, and matched against your own video catalog or the video catalog of the 3rd parties you include in your script. |
 | rangeDay | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params. E.g. `"30,0"` |
