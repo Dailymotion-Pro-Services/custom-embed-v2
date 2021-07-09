@@ -41,12 +41,16 @@ You need to do 2 things to embed the Player.
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
 | showInfoCard | boolean | Info of the video in a card below the video player. If you show the Info Card then you don't need to set `showVideoTitle` as the info card contains both video title, description and publisher logo. |
 | showOutsidePlaylist | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. |
-| startDate | string | Set a start date to find a video. You should follow this format "YYYY-MM-DD" e.g. "2020-04-01" |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
+| hideButton | boolean | This is a custom button for hidding the PiP Player instead of close it permanently. so the visitor can unhide it when they want to watch it again. This will override the original controls. |
 
+### Deprecated Parameters From V1
 
+| Name | Type | Description |
+| :---: | :---: | --- |
+| startDate | string | Deprecated since V2 |
 
 **Embed Example :**
 ```
@@ -65,10 +69,10 @@ You need to do 2 things to embed the Player.
    showVideoTitle="true"
    showInfoCard="true"
    showOutsidePlaylist="bottom"
-   startDate="2020-04-01"
    videoId="x7webup"
    playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
+   hideButton="true"
 ></div>
 ```
 
