@@ -44,7 +44,7 @@ You need to do 2 things to embed the Player.
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
-| hideButton | boolean | This is a custom button for hidding the PiP Player instead of close it permanently. so the visitor can unhide it when they want to watch it again. This will override the original controls. |
+
 
 ### Deprecated Parameters From V1
 
@@ -72,7 +72,6 @@ You need to do 2 things to embed the Player.
    videoId="x7webup"
    playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
-   hideButton="true"
 ></div>
 ```
 
