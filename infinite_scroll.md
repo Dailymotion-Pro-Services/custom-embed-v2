@@ -13,10 +13,10 @@ This method can be used to render the player on perticular html `element`. This 
     window.dmceRender( document.getElementById("playerHolder"));
 </script>
 ```
-link : (render player)[https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/]
+link :[render player](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/)
 
 The same funtion also can be used to render the player for infinite scrollling.
-link : (infinite scroll)[https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/]
+link : [infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
 
 
 
