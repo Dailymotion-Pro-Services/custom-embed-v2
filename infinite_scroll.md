@@ -1,10 +1,10 @@
 # Infinite Scrolling
 
-The CE script exposed `window.dmceRender` method to render the player programmatically.
+The Custom Embed script exposed `window.dmceRender` method to render the player programmatically.
 
 ### window.dmceRender( `playerHolder`: HTMLElement) :
 
-This method can be used to render the player on perticular html `element`.
+This method can be used to render the player on targeted `HTMLElement`.
 This is a [simple example](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/).
 
 ```html
@@ -15,7 +15,7 @@ This is a [simple example](https://dmvs-apac.github.io/custom-embed-v2/examples/
 </script>
 ```
 
-The same funtion also can be used to render the player for infinite scrollling.Here is the example page
+The same function also can be used to render the player for infinite scrolling. Here is the example page
 [infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
 
 
