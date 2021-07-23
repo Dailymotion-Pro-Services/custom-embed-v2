@@ -1,6 +1,6 @@
 # Infinite Scrolling
 
-The Custom Embed script exposed `window.dmceRender` method to render the player programmatically.
+The Custom Embed script provides `window.dmceRender` method to render the player programmatically.
 
 ### window.dmceRender( `playerHolder`: HTMLElement) :
 
