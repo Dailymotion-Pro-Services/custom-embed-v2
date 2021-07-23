@@ -4,7 +4,8 @@ The CE script exposed `window.dmceRender` method to render the player programmat
 
 ### window.dmceRender( `playerHolder`: HTMLElement) :
 
-This method can be used to render the player on perticular html `element`. This is a simple example.
+This method can be used to render the player on perticular html `element`.
+This is a [simple example](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/).
 
 ```html
 <div id="playerHolder" playerId="PLAYER_ID" owners="{YOUR_CHANNEL_NAME}" videoId="{VIDEO_ID}" ></div>
@@ -13,10 +14,9 @@ This method can be used to render the player on perticular html `element`. This 
     window.dmceRender( document.getElementById("playerHolder"));
 </script>
 ```
-link :[render player](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/)
 
-The same funtion also can be used to render the player for infinite scrollling.
-link : [infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
+The same funtion also can be used to render the player for infinite scrollling.Here is the example page
+[infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
 
 
 
