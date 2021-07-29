@@ -17,9 +17,9 @@ Just need to add livestream video's `xid` in `videoId` field. Here is an example
 
 ### Livestream replacement :
 
-We provide livestream replacement when live stream is `off air`. If livestream video is off air, player will find any (recoding)[https://developer.dailymotion.com/api/#video-recordings-connection] related to livestream video. If there is no recorded video found, player will fetch recent video from the given `CHANNEL_NAME`.
+We provide livestream replacement when live stream is `off air`. If livestream video is off air, player will find any [recoding](https://developer.dailymotion.com/api/#video-recordings-connection) related to livestream video. If there is no recorded video found, player will fetch recent video from the given `CHANNEL_NAME`.
 
-We provide also information on the player notifying that current video is a replacement of livestream video. The Player also checks in every 5 minutes from the (DATA-API)[https://developer.dailymotion.com/api/#video-onair-field] to check `onair` status of the livestream video. If the livestream video is live / `on air` then player will change the current video to livestream video.
+We provide also information on the player notifying that current video is a replacement of livestream video. The Player also checks in every 5 minutes from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) to check `onair` status of the livestream video. If the livestream video is live / `on air` then player will change the current video to livestream video.
 
 ### Replacement informatio:
 
