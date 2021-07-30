@@ -1,11 +1,11 @@
 # Livestream video embed
 
-Dailymotion custom embed support to embed livestream video.
+Dailymotion custom embed supports the embed of a livestream.
 
 
 **Embed Example :**
 
-Just need to add livestream video's `xid` in `videoId` field. Here is an example.
+You only need to add your livestream's `xid` in `videoId` field. Here is an example.
 ```html
 <div class="dm-player"
     playerId="{PLAYER_ID}"
@@ -17,22 +17,23 @@ Just need to add livestream video's `xid` in `videoId` field. Here is an example
 
 ### Livestream replacement :
 
-We provide livestream replacement when live stream is `off air`. If livestream video is off air, player will find any [recoding](https://developer.dailymotion.com/api/#video-recordings-connection) related to livestream video. If there is no recorded video found, player will fetch recent video from the given `CHANNEL_NAME`.
+We provide livestream replacement when livestream is `off air`. If livestream video is off air, player will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the livestream. If there is no recorded video found, the video player will fetch a recent video from the given `CHANNEL_NAME`.
 
-We provide also information on the player notifying that current video is a replacement of livestream video. The Player also checks in every 5 minutes from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) to check `onair` status of the livestream video. If the livestream video is live / `on air` then player will change the current video to livestream video. Even when player loads, player checks livestream `on air` status and follow the same flow.
+We provide also information on the player notifying that current video is a replacement of a livestream. The player also checks in every 5 minutes from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the livestream. If the livestream is live / `on air` then player will change back the current video to livestream instead. Even when player loads, player checks livestream `on air` status and follows the same flow.
 
-### Replacement informatio:
+### Replacement information:
 
-We also provide option to change the text in the inofrmation when livestream video is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
+We also provide option to change the text in the information when livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
 
 Here is an example.
+
 ```html
 <script type="application/json" id="dm_player_text">
     {
         "livestream" : {
-            "info_title" : "this custome message.",
+            "info_title" : "input your custom message.",
             "info_learn" : "Learn more..",
-            "info_details" : "this custom details of the livesteam message. It can be edited as needed."
+            "info_details" : "custom details of the livesteam message. It can be edited as needed."
         }
     }
 </script>
