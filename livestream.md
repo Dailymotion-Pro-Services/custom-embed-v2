@@ -14,6 +14,7 @@ You only need to add your livestream's `xid` in `videoId` field. Here is an exam
 />
 ```
 
+This also works with private videos using a `kid` in the `privateVideoId`.
 
 ### Livestream replacement :
 
