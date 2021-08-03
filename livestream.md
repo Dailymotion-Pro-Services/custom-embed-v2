@@ -32,7 +32,7 @@ Here is an example.
 <script type="application/json" id="dm_player_text">
     {
         "livestream" : {
-            "info_title" : "this is custome message.",
+            "info_title" : "this is custom message.",
             "info_learn" : "Learn more..",
             "info_details" : "this is custom details of the livesteam message. It can be edited as needed."
         }
