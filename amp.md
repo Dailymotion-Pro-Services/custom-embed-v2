@@ -2,11 +2,11 @@
 
 We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-video-iframe/) AMP componenets to support AMP page. Please follow the instruction.
 
-## 1) Host Resources to your server first
+### 1) Host Resources to your server first
 
 Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html) and host the page in your server.
 
-## 2) Put code below to your `<head>` page
+### 2) Put code below to your `<head>` page
 
 ```html
 <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-video-iframe-0.1.js">
@@ -16,7 +16,7 @@ Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html
 ```
 > [`amp-video-docking`](https://amp.dev/documentation/components/amp-video-docking/) : Functionality for videos that minimize ("dock") to a corner or a custom position on scroll.
 
-## 3) The configuration
+### 3) The configuration
 ```html
 <amp-video-iframe 
   layout="responsive" 
