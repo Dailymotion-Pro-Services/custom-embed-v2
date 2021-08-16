@@ -56,5 +56,5 @@ Check below the table for details available parameters
 | data-param-fallbackplaylist | string |  If there is no relevance videos it will fallback to embed a specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
 
 ### Example Links
-- [AMP Simple Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp_embed/)
-- [AMP Playlist Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp_embed_playlist/)
+- [AMP Simple Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp/)
+- [AMP Playlist Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp/playlist.html)
