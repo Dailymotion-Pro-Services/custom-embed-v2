@@ -17,7 +17,7 @@ You need to do 2 things to embed the Player.
 ### Standard Embed Tag
 
 ```html
-<div class="dm-player" playerId="{PLAYER_ID}" sort="relevance" owners="{YOUR_CHANNEL_NAME}"></div>
+<div class="dm-player" playerId="{PLAYER_ID}" sort="relevance" keywordsSelector="meta[name='keywords']" owners="{YOUR_CHANNEL_NAME}"></div>
 ```
 
 ### Parameters Available
