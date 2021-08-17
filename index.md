@@ -77,6 +77,10 @@ You need to do 2 things to embed the Player.
 ></div>
 ```
 
+### Player features:
+The Player is implemented with [*Page Visibility API*](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API). If a player is `playing` in the active tab/page, the player goes to `pause` if the tab/page is inactive, and vice versa.
+
+
 ### PIP customisation
 
 The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection [here](https://codepen.io/collection/NqPeEy).
