@@ -37,6 +37,7 @@ You need to do 2 things to embed the Player.
 | referrerPolicy | string | The Referrer-Policy HTTP header controls how much referrer information (sent via the Referer header) should be included with requests. You can read more on this [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) documentation. |
 | language | string | Language of the video if you want to target specific languages only for a website. For more details check here: [Languages](https://developer.dailymotion.com/api/#languages) |
 | keywordsSelector | string | Define which meta tag you will use for the contextual embed. If you leave it blank it will get the `<h1>` the words in the meta tag will be chunked, sanitized, and matched against your own video catalog or the video catalog of the 3rd parties you include in your script. |
+| category | string | Content category to filter. List of available categories: https://api.dailymotion.com/channels |
 | rangeDay | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
 | preVideoTitle | string | A custom section title above the video player embed, i.e. `"See also: Recommended videos"` |
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
