@@ -7,6 +7,7 @@ We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-
 Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html) and host the page on your server.
 <details>
   <summary>CLICK ME</summary>
+
 ```html
   <!DOCTYPE html>
   <html lang="en">
