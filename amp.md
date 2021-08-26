@@ -5,16 +5,6 @@ We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-
 ### 1) Host Resources to your server first
 Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html) and host the page on your server.
 
-<details>
-  <summary>Click to expand!</summary>
-  
-  ```javascript
-    function logSometing(something) {
-      console.log(`Logging: ${something}`);
-    }
-  ```
-</details>
-
 **Source Code :**
 ```html
   <!DOCTYPE html>
