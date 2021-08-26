@@ -4,8 +4,7 @@ We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-
 
 ### 1) Host Resources to your server first
 
-***Source Code :
-
+**Source Code :**
 ```html
   <!DOCTYPE html>
   <html lang="en">
