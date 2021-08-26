@@ -3,7 +3,7 @@
 We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-video-iframe/) AMP components to support AMP page. Please follow the instruction.
 
 ### 1) Host Resources to your server first
-
+Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html) and host the page on your server.
 **Source Code :**
 ```html
   <!DOCTYPE html>
