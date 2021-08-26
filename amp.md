@@ -5,6 +5,32 @@ We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-
 ### 1) Host Resources to your server first
 
 Copy the source code of [dm-player](https://srvr.dmvs-apac.com/v2/dm-player.html) and host the page on your server.
+> <details>
+  <summary>Click to expand!</summary>
+  
+  ```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DM player</title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <style type="text/css">
+            body, html {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dm-player" ></div>
+
+        <script async src="https://cdn.ampproject.org/video-iframe-integration-v0.js"></script>
+        <script src="dm-amp.js"></script>
+    </body>
+</html>
+  ```
+</details>
 
 ### 2) Put code below to your `<head>` page
 
