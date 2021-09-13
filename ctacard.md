@@ -139,4 +139,4 @@ __3) Player level with video:__ Combination of __player level__ data with __vide
 - For __Player level with video__ data structure, if current video of the player has no information for CTA card then it will check __Player level__ data i.e., `cta_card[0]` 
 
 **Example:**
-- [CTA Link Card - playGround](https://dmvs-apac.github.io/custom-embed-v2/examples/cta_card/index.html)
+- [CTA Link Card - playground](https://dmvs-apac.github.io/custom-embed-v2/examples/cta_card/index.html)
