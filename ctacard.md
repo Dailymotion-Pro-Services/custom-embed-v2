@@ -93,6 +93,6 @@ __2) Video level:__ Data will be set for each video.
 - CTA card will be hidden when an ad is playing on the player.
 - CTA card will not show on PIP.
 
-**Example:**
+### Example:
 
 - [CTA Link Card - playGround](https://dmvs-apac.github.io/custom-embed-v2/examples/cta_card/index.html)
