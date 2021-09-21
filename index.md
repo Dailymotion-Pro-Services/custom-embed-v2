@@ -8,7 +8,7 @@ To use custom embed you must create player first through [Partner HQ](https://ww
 You need to do 2 things to embed the Player.
 
 1. Put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) at the very bottom before `body` end in your website
-```js
+```html
 <script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 ```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
@@ -46,6 +46,7 @@ You need to do 2 things to embed the Player.
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
+| lazyload | boolean | This is just to prevent the page render the player at first load, if actived the player just render if user start scrolling down the page |
 
 
 ### Deprecated Parameters From V1
@@ -75,6 +76,7 @@ You need to do 2 things to embed the Player.
    privateVideoId="k6sgZEzVrMV3vHwvmX6"
    playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
+   lazyload="true"
 ></div>
 ```
 
