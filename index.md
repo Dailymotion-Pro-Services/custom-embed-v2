@@ -42,6 +42,7 @@ You need to do 2 things to embed the Player.
 | preVideoTitle | string | A custom section title above the video player embed, i.e. `"See also: Recommended videos"` |
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
 | showInfoCard | boolean | Info of the video in a card below the video player. If you show the Info Card then you don't need to set `showVideoTitle` as the info card contains both video title, description and publisher logo. |
+| ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dmvs-apac.github.io/custom-embed-v2/ctacard) |
 | showOutsidePlaylist | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
