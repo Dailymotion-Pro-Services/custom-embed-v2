@@ -4,7 +4,9 @@ Dailymotion custom embed supports the addition of CTA links in any video. Check 
 
 ### Start Embedding
 
-To embed players with in-video CTA cards, you need to add `<script type="application/json" id="dm_player_text" >` tag before [Custom embed code for player](https://dmvs-apac.github.io/custom-embed-v2/).
+To embed players with in-video CTA cards 
+- You need to add `<script type="application/json" id="dm_player_text" >` tag before [Custom embed code for player](https://dmvs-apac.github.io/custom-embed-v2/).
+- Also add `ctaCard` parameters with value `true` in [Custom embed code for player](https://dmvs-apac.github.io/custom-embed-v2/).
 
 Data for in-video CTA card can be set inside `<script type="application/json">` as `JSON` format.
 
@@ -21,6 +23,7 @@ Here is an example.
         }
     }
 </script>
+<div class="dm-player" playerId="{PLAYER_ID}" sort="recent" owners="{YOUR_CHANNEL_NAME}" ctaCard="true"></div>
 ```
 
 ### Data Format:
