@@ -1,6 +1,6 @@
 # Dailymotion Custom Embed v2
 
-A version 2 Custom Embed new player
+This is the latest version of our Custom Embed framework
 
 
 ## Documentation Links
