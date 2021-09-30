@@ -49,7 +49,7 @@ You need to do 2 things to embed the Player.
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
 | lazyload | boolean | This is just to prevent the page render the player at first load, if actived the player just render if user start scrolling down the page |
 | app | string | This is an in-app parameter. This additional parameter will be passed into the Player URL in order to ensure correct monetization and tracking. For more details check [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
-| clientType | string | This is another in-app parameter similar to client_type in [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
+| clientType | string | This is another in-app parameter similar to `client_type` in [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
 
 
 ### Deprecated Parameters From V1
