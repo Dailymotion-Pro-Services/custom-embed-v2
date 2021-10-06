@@ -47,7 +47,7 @@ You need to do 2 things to embed the Player.
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
-| lazyload | boolean | This is just to prevent the page render the player at first load, if actived the player just render if user start scrolling down the page |
+| lazyload | boolean | This is just to prevent the page render the player at first load, if actived the player just render if user start scrolling down the page. See example of this in the [following sample page](https://staging.dmvs-apac.com/ce-v2/lab/lazy-load.html). |
 | app | string | This is an in-app parameter. This additional parameter will be passed into the Player URL in order to ensure correct monetization and tracking. For more details check [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
 | clientType | string | This is another in-app parameter similar to `client_type` in [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
 
