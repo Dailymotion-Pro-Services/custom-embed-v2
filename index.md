@@ -9,7 +9,7 @@ You need to do 2 things to embed the Player.
 
 1. Put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) at the very bottom before `body` end in your website
 ```html
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+<script src="https:://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 ```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 
