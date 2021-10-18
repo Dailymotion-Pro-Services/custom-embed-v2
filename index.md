@@ -7,9 +7,14 @@ To use custom embed you must create player first through [Partner HQ](https://ww
 
 You need to do 2 things to embed the Player.
 
-1. Put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) at the very bottom before `body` end in your website
+1. Put the script at the very bottom before `body` end in your website. You can download the script [here](//srvr.dmvs-apac.com/v2/dm-ce.min.js)
 ```html
+<!-- !!! VERY IMPORTANT -->
+
 <script src="https:://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+
+</body>
+</html>
 ```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 

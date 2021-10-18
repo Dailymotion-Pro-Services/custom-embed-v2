@@ -1,0 +1,15 @@
+# Lazy Load
+
+There are some blocker to render a website. Using lazy load, we're trying to not block anything in the parent site. So the parent site will render their own site first before we start render our player.
+
+Technically, the script just waiting for user to start scrolling then the player start rendering. To activate this, partners just need to add a param. The sample below
+
+```html
+
+<div class="dm-player" playerId="{PLAYER_ID}" sort="relevance" keywordsSelector="meta[name='keywords']" owners="{YOUR_CHANNEL_NAME}" laziload="true"></div>
+
+
+```
+
+With the sample above the script won't blocked the rendering process. It just let the parent site to render their own stuff first. So their visitor will focus on their content first before reach the player. 
+
