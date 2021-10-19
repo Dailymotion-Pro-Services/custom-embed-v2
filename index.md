@@ -14,8 +14,8 @@ You need to do 2 things to embed the Player.
 
 <script src="https:://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 
-&lt;/body&gt;
-&lt;/html&gt;
+</body>
+</html>
 ```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 
