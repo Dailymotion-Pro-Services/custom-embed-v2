@@ -7,7 +7,8 @@ To use custom embed you must create player first through [Partner HQ](https://ww
 
 You need to do 2 things to embed the Player.
 
-1. Put the script at the very bottom before `body` end in your website. You can download the script [here](//srvr.dmvs-apac.com/v2/dm-ce.min.js)
+1. Put the script at the very bottom before `body` end in your website. You can download the script [here](https://srvr.dmvs-apac.com/v2/dm-ce.min.js)
+
 ```html
 <!-- !!! VERY IMPORTANT -->
 
