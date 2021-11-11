@@ -22,7 +22,7 @@ Copy the `html` code below and host the page on your server as `dm-player.html`.
           <div class="dm-player" ></div>
 
           <script async src="https://cdn.ampproject.org/video-iframe-integration-v0.js"></script>
-          <script src="dm-amp.js"></script>
+          <script src="https://srvr.dmvs-apac.com/v2/dm-amp.min.js"></script>
       </body>
   </html>
 ```
