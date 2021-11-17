@@ -74,7 +74,7 @@ You need to do 2 things to embed the Player.
    excludeIds="xxxid,xyxid"
    searchInPlaylist="xxpid"
    syndication="1234567"
-   adsParams="custom"
+   customParams="custom"
    keywordsSelector="meta[name='keywords']"
    rangeDay="30,0,90"
    preVideoTitle="See also:"
