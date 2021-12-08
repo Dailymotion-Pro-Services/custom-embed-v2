@@ -12,7 +12,7 @@ You need to do 2 things to embed the Player.
 ```html
 <!-- !!! VERY IMPORTANT -->
 
-<script src="https:://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+<script src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 
 </body>
 </html>
