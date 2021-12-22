@@ -37,6 +37,7 @@ You need to do 2 things to embed the Player.
 | privateVideoId | string | Set private kid directly to the tag |
 | playlistId | string | Set playlist xid directly to the tag to embed playlist |
 | excludeIds | string | xid of videos to exclude. You can find the xid of any video by going on dailymotion.com and looking at the URL address in your browser for a given video. To put more than one id, you can separate them by "," |
+| excludeChannelIds | string | List ids/username of the channels to exclude from the result set. To put more than one id, you can separate them by ",". API reference : https://developer.dailymotion.com/api/#video-exclude_channel_ids-filter |
 | searchInPlaylist | string | provide playlist xid to search videos within the playlist |
 | syndication | string | Syndication key. Needed if the video content does not belong to your channel / network of channels AND/OR if you embed the Dailymotion video player into specific 3rd party environments (Google AMP, Facebook IA, OTT products, in-app, operated but not owned web domains...). This enables tracking and targeting. |
 | customParams | string | To add declarative values as parameter; this could be an advertising, environment-specific value that the dailymotion player cannot understand on its own, for instance 'column-player' versus 'main-article'. |
