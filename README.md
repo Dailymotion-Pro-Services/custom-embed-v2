@@ -6,7 +6,8 @@ This is the latest version of our Custom Embed framework
 ## Documentation Links
 
 - [Custom Embed Solution](https://dmvs-apac.github.io/custom-embed-v2/)
-- [Hidden Features For Specific Partners](https://dmvs-apac.github.io/custom-embed-v2/hidden_features)
+- [Custom Embed Solution: Hidden Features For Specific Partners](https://dmvs-apac.github.io/custom-embed-v2/hidden_features)
+- [Custom Embed Solution: infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/infinite_scroll)
 - [AMP Support](https://dmvs-apac.github.io/custom-embed-v2/amp)
 - [Embed through GAM](https://dmvs-apac.github.io/custom-embed-v2/embed_gam)
 - [React Component- Custom Embed Solution](https://www.npmjs.com/package/@dmvs-apac/dm-custom-embed-react)
