@@ -3,6 +3,10 @@ div.wrapper{
     width: 100%;
     margin: auto;
 }
+label{
+    font-size: 17px;
+    font-weight: bold;
+}
 div.section:first-child{
     border-right: 1px solid #00000024;
     padding-right: 10px;
