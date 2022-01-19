@@ -1,0 +1,79 @@
+
+div.wrapper{
+    width: 100%;
+    margin: auto;
+}
+div.section:first-child{
+    border-right: 1px solid #00000024;
+    padding-right: 10px;
+}
+div.section{
+    width: 50%;
+    float: left;
+    min-height: 500px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.code-div{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    border: 1px solid #cecece;
+    word-break: break-all;
+}
+.net-div{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    height: 310px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.load-player{
+    background: #257cff;
+    color: #fff;
+    font-size: 20px;
+    width: 133px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.player-div{
+    padding: 42px 10px;
+}
+.api-call{
+    word-break: break-all;
+    background: #e5e5e5;
+    padding: 10px;
+    position: relative;
+}
+.api-call:nth-child(odd){
+    margin-top: 10px;
+    padding-top: 35px;
+}
+.api-call:last-child{
+    background: #0080564a;
+}
+.api-number{
+    position: absolute;
+    background: #257cff;
+    color: #fff;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    font-size: 15px;
+    top: 0px;
+    left: 0px;
+}
+.api-select{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #00000047;
+    cursor: pointer;
+}
