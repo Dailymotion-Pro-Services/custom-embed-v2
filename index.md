@@ -7,9 +7,15 @@ To use custom embed you must create player first through [Partner HQ](https://ww
 
 You need to do 2 things to embed the Player.
 
-1. Put the [script](//srvr.dmvs-apac.com/v2/dm-ce.min.js) at the very bottom before `body` end in your website
-```js
-<script src="//srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+1. Put the script at the very bottom before `body` end in your website. You can download the script [here](https://srvr.dmvs-apac.com/v2/dm-ce.min.js)
+
+```html
+<!-- !!! VERY IMPORTANT -->
+
+<script src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+
+</body>
+</html>
 ```
 3. Add `<div class="dm-player" `[{PARAMS}](#parameters-available)`></div>` in your body content. The best place to put this tag is in the middle of the article.
 
@@ -31,21 +37,27 @@ You need to do 2 things to embed the Player.
 | privateVideoId | string | Set private kid directly to the tag |
 | playlistId | string | Set playlist xid directly to the tag to embed playlist |
 | excludeIds | string | xid of videos to exclude. You can find the xid of any video by going on dailymotion.com and looking at the URL address in your browser for a given video. To put more than one id, you can separate them by "," |
+| excludeChannelIds | string | List ids/username of the channels to exclude from the result set. To put more than one id, you can separate them by ",". API reference : https://developer.dailymotion.com/api/#video-exclude_channel_ids-filter |
 | searchInPlaylist | string | provide playlist xid to search videos within the playlist |
 | syndication | string | Syndication key. Needed if the video content does not belong to your channel / network of channels AND/OR if you embed the Dailymotion video player into specific 3rd party environments (Google AMP, Facebook IA, OTT products, in-app, operated but not owned web domains...). This enables tracking and targeting. |
-| adsParams | string | To add custom ad prameters |
+| customParams | string | To add declarative values as parameter; this could be an advertising, environment-specific value that the dailymotion player cannot understand on its own, for instance 'column-player' versus 'main-article'. |
 | referrerPolicy | string | The Referrer-Policy HTTP header controls how much referrer information (sent via the Referer header) should be included with requests. You can read more on this [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) documentation. |
-| language | string | Language of the video if you want to target specific languages only for a website. For more details check here: [Languages](https://developer.dailymotion.com/api/#languages) |
+| languages | string | Languages of the video if you want to target specific languages only for a website. To put more than 1 value you can separate by `","`. E.g. `"en,fr"`.For more details check here: [Languages](https://developer.dailymotion.com/api/#languages) |
 | keywordsSelector | string | Define which meta tag you will use for the contextual embed. If you leave it blank it will get the `<h1>` the words in the meta tag will be chunked, sanitized, and matched against your own video catalog or the video catalog of the 3rd parties you include in your script. |
+| keywords | string | you can add keywords with comma sepeartors for the contexual embed . This is alternative solution of using keywordsSelector parameter. E.g. `"football,sports"` |
 | category | string | Content category to filter. List of available categories: https://api.dailymotion.com/channels |
 | rangeDay | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
 | preVideoTitle | string | A custom section title above the video player embed, i.e. `"See also: Recommended videos"` |
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
 | showInfoCard | boolean | Info of the video in a card below the video player. If you show the Info Card then you don't need to set `showVideoTitle` as the info card contains both video title, description and publisher logo. |
+| ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dmvs-apac.github.io/custom-embed-v2/ctacard) |
 | showOutsidePlaylist | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
+| lazyload | boolean | This is just to prevent the page render the player at first load, if actived the player just render if user start scrolling down the page. See example of this in the [following sample page](https://staging.dmvs-apac.com/ce-v2/lab/lazy-load.html). |
+| app | string | This is an in-app parameter. This additional parameter will be passed into the Player URL in order to ensure correct monetization and tracking. For more details check [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
+| clientType | string | This is another in-app parameter similar to `client_type` in [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
 
 
 ### Deprecated Parameters From V1
@@ -64,7 +76,7 @@ You need to do 2 things to embed the Player.
    excludeIds="xxxid,xyxid"
    searchInPlaylist="xxpid"
    syndication="1234567"
-   adsParams="custom"
+   customParams="custom"
    keywordsSelector="meta[name='keywords']"
    rangeDay="30,0,90"
    preVideoTitle="See also:"
@@ -75,6 +87,7 @@ You need to do 2 things to embed the Player.
    privateVideoId="k6sgZEzVrMV3vHwvmX6"
    playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
+   lazyload="true"
 ></div>
 ```
 
