@@ -29,4 +29,5 @@ You can use it with public features, this is just example how to use it
 For mobile viewport, the player's width in pip is `240px`. Sometimes, it may affect an ad's UI ( like no skip button ). For those cases, you can use `metaPip="mobileBig"` to have a full-width pip in the mobile viewport. [Check Examples](#example-links).
 
 ### Example Links
-- [zsdfvg](https://dmvs-apac.github.io/custom-embed-v2/examples/api_call_control/)
+- [metaPip="true"](https://dmvs-apac.github.io/custom-embed-v2/examples/meta_pip/)
+- [metaPip="mobileBig"](https://dmvs-apac.github.io/custom-embed-v2/examples/meta_pip/mobile_big)
