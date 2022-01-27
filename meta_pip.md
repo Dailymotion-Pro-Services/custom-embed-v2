@@ -26,4 +26,7 @@ You can use it with public features, this is just example how to use it
 ```
 
 ### metaPip="mobileBig" 
-For mobile viewport, the player's width in pip is `240px`. Sometimes, it may effect on an ad's UI ( like no skip button ). For those cases, you can use `metaPip="mobileBig"` to have full width pip in mobile viewport. Check Examples.
+For mobile viewport, the player's width in pip is `240px`. Sometimes, it may effect on an ad's UI ( like no skip button ). For those cases, you can use `metaPip="mobileBig"` to have full width pip in mobile viewport. [Check Examples](#example-links).
+
+### Example Links
+- [Control API Call with `minWordSearch` and `maxWordSearch`](https://dmvs-apac.github.io/custom-embed-v2/examples/api_call_control/)
