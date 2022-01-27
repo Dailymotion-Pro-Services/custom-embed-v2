@@ -1,9 +1,9 @@
 # Pip with metadata 
 
-Dailymotion Custom Embed have an experimental component i.e., `metaPip`. It shows pip with some metadata about the content video ( owner's, video title ).
+Dailymotion Custom Embed have an experimental component i.e., `metaPip`. It shows pip with some metadata about the content video ( channel name, video title ).
 > ALthough, the best practice is to use defaut pip provided by player settings in [Partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players)
 
-*To use this feature you must disable default pip from player settings in [Partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players)
+**To use this feature you must disable default pip from player settings in [Partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players)**
 
 ### Parameter
 
