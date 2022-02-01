@@ -13,7 +13,7 @@ Dailymotion Custom Embed provides two extra parameters i.e., `minWordSearch` and
 
 **Embed Example:**
 
-You can use it with public features, this is just example how to use it 
+You can use it with public features, this is an example on how to use it 
 ```html
 <div class="dm-player"
 	minWordSearch="4"
