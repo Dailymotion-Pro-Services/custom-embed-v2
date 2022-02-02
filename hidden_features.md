@@ -1,6 +1,6 @@
-# Hidden Features For Specific Partners
+# Extra Features For Specific Use Cases
 
-We have hidden features requested from partners
+We developed a few extra parameters for video embed contexts requiring bespoke features. 
 
 ### Parameters
 
@@ -14,7 +14,7 @@ If you don't want to use this, you just don't need to use the parameters inside 
 
 **Embed Example :**
 
-You can use it with public features, this is just example how to use it 
+You can use it with public features from the main Custom Embed documentation, this is just an example on how to use it 
 ```html
 <div class="dm-player"
 	closeButton="true"
