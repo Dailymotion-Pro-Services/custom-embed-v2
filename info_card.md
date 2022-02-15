@@ -5,7 +5,7 @@
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| showInfoCard | boolean/string | false | You can set with three possible value. [Learn more](#Parametersvalues) |
+| showInfoCard | boolean/string | false | You can set with three possible value. [Learn more](#parameters-values) |
 
 ## Parameters Values
 
