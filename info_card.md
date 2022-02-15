@@ -1,7 +1,7 @@
 # Info Card
 
 `Info Card` is a component of Dailymotion Custom Embed. It shows information about the current video such as video title, description etc. With the `showInfoCard` parameter you can activate `infocard` component The card will be added at bottom of the video player.
-> `Info Card` is not compatibale with `showVideoTitle` and `showOutsidePlaylist`. 
+> `Info Card` is not compatible with `showVideoTitle` and `showOutsidePlaylist`. 
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@
 </div>
 ```
 
-**semi** : `infocard` will show some of the vide information. But The desciption of the video will be in collapsed mode.`learn more` button will exapnd the `infocard` showing the desciption of the video. Sample code
+**semi** : `infocard` will show some of the video information. But the desciption of the video will be in collapsed mode.`learn more` button will expand the `infocard` showing the desciption of the video. Sample code
 ```html
 `<div class="dm-player"
     owners="suaradotcom"
@@ -33,7 +33,7 @@
 </div>
 ```
 
-**snippet** : This is special feature of the `infocard`. Player will be in collapsed mode. The snippets of information the video will show in the `infocard`. You can click on the `infocard` to expand player and change the infocard value to `collapsed`. Sample code
+**snippet** : This is a special feature of the `infocard`. Player will be hidden. The snippets of information of the video will show in the `infocard`. You can click on the `infocard` to expand player and change the infocard value to `collapsed`. Sample code
 ```html
 `<div class="dm-player"
     owners="suaradotcom"
