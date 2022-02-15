@@ -1,6 +1,6 @@
 # Info Card
 
-`Info Card` is a component of Dailymotion Custom Embed . It shows information of the current video such as video title, description etc. With the `showInfoCard` parameter you can activate `info card` component The card will be added at bottom of the video player.
+`Info Card` is a component of Dailymotion Custom Embed. It shows information about the current video such as video title, description etc. With the `showInfoCard` parameter you can activate `infocard` component The card will be added at bottom of the video player.
 > `Info Card` is not compatibale with `showVideoTitle` and `showOutsidePlaylist`. 
 
 | Name | Type | Default | Description |
@@ -42,7 +42,7 @@
     showinfocard="snippet">
 </div>
 ```
-> You must set player settings to `autostart:off` from [Partner's HQ](https://www.dailymotion.com/partner/embed/players) in order to use the infocard with `snippet`.
+> You must set player settings to `autostart:off` from [Partner's HQ](https://www.dailymotion.com/partner/embed/players) to use the `infocard` with `snippet`.
 
 ### Example Link
 - [Info card Playground](https://dmvs-apac.github.io/custom-embed-v2/examples/info_card/)
