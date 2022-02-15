@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info card Playground</title>
+
+    <meta name="keywords" content="jokowi, covid-19, indonesia">
+
+    <style>
+        .main-content {
+            max-width: 600px;
+            width: 100%;
+            margin: 30px;
+            margin-left: auto;
+        }
+        p {
+            color: #000;
+        }
+        .controler{
+            position: fixed;
+            left: 150px;
+        }
+        .info-code-wrapper{
+            width: 395px;
+            margin: 25px 0px;
+        }
+        .info-code{
+            padding: 10px;
+            font-size: 20px;
+            font-family: monospace;
+            border: 1px solid #cecece;
+            word-break: break-all;
+        }
+        .extra-info{
+            font-style: italic;
+            color: #5b5b5b;
+            padding-top: 5px;
+            display: none;
+        }
+        .extra-info.show{
+            display: block;
+        }
+        @media (max-width: 576px) { 
+            .controler{
+                display: none;
+            }
+        }
+        input[type="radio"],input[type="color"],label{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="controler">
+    <p>Choose your colors:</p>
+
+    <div>
+        <input type="color" id="infoBg" name="info_bg"
+            value="#e66465">
+        <label for="info_bg">Info card : Background</label>
+    </div>
+
+    <div>
+        <input type="color" id="infoColor" name="info_color"
+                value="#ffffff">
+        <label for="info_color">Info card : text color</label>
+    </div>
+
+    <p>Choose your info card:</p>
+    <div>
+        <input type="radio" id="infoCollapsed" name="info_type"
+            value="collapsed" checked>
+        <label for="infoCollapsed">Info card : collapsed</label>
+    </div>
+    <div>
+        <input type="radio" id="infoSemi" name="info_type"
+            value="semi_collapsed">
+        <label for="infoSemi">Info card : semicollapsed</label>
+    </div>
+    <div>
+        <input type="radio" id="infoOnly" name="info_type"
+            value="only">
+        <label for="infoOnly">Info card : snippet (<b>player must be autostart: off</b>)</label>
+    </div>
+
+    <div class="info-code-wrapper" >
+        <div class="info-code" id="infoCode" contenteditable="true">
+
+        </div>
+        <div class="extra-info" id="extraInfo" >click outside to apply the code</div>
+    </div>
+</div>
+<article class="main-content">
+    <header>
+        <h1>Jokowi Bicara Penanganan Covid19 di Indonesia</h1>
+    </header>
+
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?</p>
+
+    <div id="playerContainer">
+        
+        <div class="dm-player" owners="suaradotcom" sort="relevance" playerId="x776e" prevideoTitle="Here's a video for you" showinfocard="true" ></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</article>
+
+<script>
+    const playerContainer = document.getElementById("playerContainer");
+    const colorPickerBg = document.getElementById("infoBg");
+    const colorPickerColor = document.getElementById("infoColor");
+    const infoCollapsed = document.getElementById("infoCollapsed");
+    const infoSemi = document.getElementById("infoSemi");
+    const infoOnly = document.getElementById("infoOnly");
+    const infoCode = document.getElementById("infoCode");
+    const extraInfo = document.getElementById("extraInfo");
+    
+
+    const divCodeSample = {
+        collapsed:`<div class="dm-player" 
+            owners="suaradotcom"
+            sort="relevance" 
+            playerId="x4aj" 
+            prevideoTitle="Here's a video for you"
+            showinfocard="true" >
+            </div>`,
+        semi_collapsed: `<div class="dm-player"
+            owners="suaradotcom"
+            sort="relevance"
+            playerId="x4aj"
+            prevideoTitle="Here's a video for you"
+            showinfocard="semi">
+            </div>`,
+        only: `<div class="dm-player"
+            owners="suaradotcom"
+            sort="relevance"
+            playerId="x7n9s"
+            showinfocard="snippet">
+            </div>`
+    }
+    let defaultCode = divCodeSample.collapsed;
+    let styleCode = "";
+
+    const style = document.createElement("style");
+
+    document.body.appendChild(style);
+
+    colorPickerBg.addEventListener("change", updateStyle);
+    colorPickerColor.addEventListener("change", updateStyle);
+    
+    function updateStyle(){
+        styleCode = `.dm-player{
+                --dm-player-info-bg: ${hexToRgb(colorPickerBg.value)};
+                --dm-player-info-color: ${hexToRgb(colorPickerColor.value)};
+            }
+            
+        `;
+        style.innerHTML = styleCode;
+        updateCode();
+    }
+    function hexToRgb(hex) {
+        let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? 
+            `${parseInt(result[1], 16)},${parseInt(result[2], 16)},${parseInt(result[3], 16)}`
+         : null;
+    }
+    
+
+    infoCollapsed.addEventListener("change", reloadPlayer);
+    infoSemi.addEventListener("change", reloadPlayer);
+    infoOnly.addEventListener("change", reloadPlayer);
+
+    infoCode.addEventListener('focusin', (event) => {
+        extraInfo.classList.add("show");
+    });
+
+    infoCode.addEventListener('focusout', (event) => {
+        extraInfo.classList.remove("show");
+        defaultCode = infoCode.innerText;
+        renderPlayer();
+    });
+
+    function reloadPlayer(){
+        defaultCode = divCodeSample[this.value];
+        updateCode();
+        renderPlayer();
+    }
+    function renderPlayer(){
+        
+        playerContainer.innerHTML = defaultCode;
+        if(window.dmceRender){
+            window.dmceRender( document.querySelector(".dm-player") );
+        }
+    }
+    
+    infoCode.innerText = divCodeSample.collapsed;
+    function updateCode(){
+        infoCode.innerText = styleCode+defaultCode;
+    }
+</script>
+<script type="text/javascript" async src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+</body>
+</html>

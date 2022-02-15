@@ -49,7 +49,7 @@ You need to do 2 things to embed the Player.
 | rangeDay | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
 | preVideoTitle | string | A custom section title above the video player embed, i.e. `"See also: Recommended videos"` |
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
-| showInfoCard | boolean | Info of the video in a card below the video player. If you show the Info Card then you don't need to set `showVideoTitle` as the info card contains both video title, description and publisher logo. |
+| showInfoCard | boolean/string | Info of the video in a card below the video player.the info card contains both video title, description etc. [Learn more](https://dmvs-apac.github.io/custom-embed-v2/info_card) |
 | ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dmvs-apac.github.io/custom-embed-v2/ctacard) |
 | showOutsidePlaylist | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
