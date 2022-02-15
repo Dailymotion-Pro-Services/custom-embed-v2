@@ -20,11 +20,14 @@ This also works with private videos using a `kid` in the `privateVideoId`.
 
 We provide livestream replacement when livestream is `off air`. If livestream video is off air, player will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the livestream. If there is no recorded video found, the video player will fetch a recent video from the given `CHANNEL_NAME`.
 
-We provide also information on the player notifying that current video is a replacement of a livestream. The player also checks in every 5 minutes from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the livestream. If the livestream is live / `on air` then player will change back the current video to livestream instead. Even when player loads, player checks livestream `on air` status and follows the same flow.
+**Livestream replacement with `fallbackPlaylist`:** If livestream video is off air and `fallbackplaylist` parameter present then player will play the playlist.
+
+We provide also information on the player notifying that current video is a replacement of a livestream. The player also checks in every 5 minutes ( by default ) from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the livestream. If the livestream is live / `on air` then player will change back the current video to livestream instead. Even when player loads, player checks livestream `on air` status and follows the same flow.
+
 
 ### Replacement information:
 
-We also provide option to change the text in the information when livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
+We also provide option to change the interval and the text in the information when livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
 
 Here is an example.
 
@@ -32,6 +35,7 @@ Here is an example.
 <script type="application/json" id="dm_player_text">
     {
         "livestream" : {
+            "info_time" : 3,
             "info_title" : "this is custom message.",
             "info_learn" : "Learn more..",
             "info_details" : "this is custom details of the livesteam message. It can be edited as needed."
@@ -40,7 +44,8 @@ Here is an example.
 </script>
 ```
 
+
 **Example :**
 
 - [Default](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/default.html)
-- [Modified text](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/text_change.html)
+- [Modified text and interval](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/text_change.html)
