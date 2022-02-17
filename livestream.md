@@ -45,13 +45,13 @@ Here is an example.
 ```
 ### Fetching video metadata:
 
-We trigger a [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-created` on document when player is created. We also expose [player object](https://developer.dailymotion.com/player/#player-api)(JavaScript Player API Reference) with the event. By the player object reference, you can fetch video metadata like `videoTitle`, `videoDuration` etc.
+We trigger a [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-created` on document when player is created. We also expose [player object](https://developer.dailymotion.com/player/#player-api)(JavaScript Player API Reference) with the event. By the player object reference, you can fetch [player state](https://developer.dailymotion.com/player/#state) containing video metadata like `videoTitle`, `videoDuration` etc.
 
 Here is an example.
 
 ```js
 document.addEventListener("dm-player-create", (e)=>{
-  const player = e.detail.player;
+  const player = e.detail.player;  // player object : JavaScript Player API Reference
   player.getState().then(state=>{
     console.log(state.videoDuration); // result : duration of the video in seconds  E.g. 78
     console.log(state.videoTitle); // result : title of the video E.g. "this a video title"
