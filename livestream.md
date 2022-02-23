@@ -53,6 +53,7 @@ Here is an example.
 </script>
 ```
 **Data Format** :
+
 | Name | Type | Default | Description |
 | :---: | :---: | :---: | :---: |
 | auto_replace | boolean | true | Auto replacement with current video/playlist when Livestream is `onair`. For `false` player will not replace with Livestream video automatically. [Learn More](#auto_replace) |
