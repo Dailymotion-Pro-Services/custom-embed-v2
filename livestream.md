@@ -35,7 +35,7 @@ We provide also information on the player notifying that the current video is a 
 
 ### Replacement information:
 
-We also provide the option to change the interval and the text in the information when Livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
+We also provide the option to change [auto replacement](#auto_replace), the interval and the text in the information when Livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
 
 Here is an example.
 
