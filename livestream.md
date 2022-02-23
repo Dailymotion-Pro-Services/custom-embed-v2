@@ -3,7 +3,7 @@
 Dailymotion custom embed supports the embed of a livestream.
 
 
-**Embed Example :**
+**Embed Example:**
 
 You only need to add your livestream's `xid` in `videoId` field. Here is an example.
 ```html
@@ -18,7 +18,7 @@ This also works with private videos using a `kid` in the `privateVideoId`.
 
 ### Livestream replacement :
 
-We provide livestream replacement when livestream is `off air`. If livestream video is off air, player will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the livestream. If there is no recorded video found, the video player will fetch a recent video from the given `CHANNEL_NAME`.
+We provide Livestream replacement when Livestream is `off air`. If Livestream video is `offair`, the player will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream. If there is no recorded video found, the video player will fetch a recent video from the given `CHANNEL_NAME`.
 
 **Livestream replacement with `fallbackPlaylist`:** If livestream video is off air and `fallbackplaylist` parameter present then player will play the playlist. Here is an example.
 ```html
@@ -30,12 +30,12 @@ We provide livestream replacement when livestream is `off air`. If livestream vi
 />
 ```
 
-We provide also information on the player notifying that current video is a replacement of a livestream. The player also checks in every 5 minutes ( by default ) from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the livestream. If the livestream is live / `on air` then player will change back the current video to livestream instead. Even when player loads, player checks livestream `on air` status and follows the same flow.
+We provide also information on the player notifying that the current video is a replacement of a Livestream. The player also checks in every 5 minutes ( by default ) from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the Livestream. If the Livestream is live / `on air` then the player will change back the current video to Livestream instead. Even when the player loads, the player checks Livestream `on air` status and follows the same flow.
 
 
 ### Replacement information:
 
-We also provide option to change the interval and the text in the information when livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
+We also provide the option to change the interval and the text in the information when Livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
 
 Here is an example.
 
@@ -43,7 +43,8 @@ Here is an example.
 <script type="application/json" id="dm_player_text">
     {
         "livestream" : {
-            "info_time" : 3,
+            "auto_replace": false,
+            "info_time" : 0.5,
             "info_title" : "this is custom message.",
             "info_learn" : "Learn more..",
             "info_details" : "this is custom details of the livesteam message. It can be edited as needed."
@@ -51,6 +52,26 @@ Here is an example.
     }
 </script>
 ```
+**Data Format** :
+| Name | Type | Default | Description |
+| auto_replace | boolean | true | Auto replacement with current video/playlist when Livestream is `onair`. For `false` player will not replace with Livestream video automatically. (Learn More)[auto_replace] |
+| info_time | number  | 5 | Interval time `in minutes` for checking Livestream video's `onair` status. [reference](https://developers.dailymotion.com/api/#video-onair-field) |
+| info_title | string | `This video is a live stream replacement.` | short note at bottom of the player if replacement video is playing |
+| info_learn | string | `Learn more..` | Anchor text to show details of the replacement information.|
+| info_details | string | `The live stream is currently off air. The system will check for live stream's status every 5 minutes; you can also refresh the page.` | Details of the replacement information. |
+
+### auto_replace:
+
+By default the player will reload with Livestream video when its `onair` replacing the current video/playlist in the player. Settings `false` player will have two more features. i.e.,
+- player will not load the Livestream video even it's `onair`. `Switch to Live` button will show the details of replacement information.
+- The Player will also dispatch [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-onair` on document when Livestream is `onair`. Here is an example.
+
+```js
+document.addEventListener("dm-player-onair", (e)=>{
+  const player = e.detail.player;  // player object : JavaScript Player API Reference
+})
+```
+
 ### Fetching video metadata:
 
 We trigger a [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-created` on document when player is created. We also expose [player object](https://developer.dailymotion.com/player/#player-api)(JavaScript Player API Reference) with the event. By the player object reference, you can fetch [player state](https://developer.dailymotion.com/player/#state) containing video metadata like `videoTitle`, `videoDuration` etc.
@@ -68,8 +89,6 @@ document.addEventListener("dm-player-create", (e)=>{
 
 ```
 
-**Example :**
+**Example:**
 
-- [Default](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/default.html)
-- [Modified text and interval](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/text_change.html)
-- [fallbackplaylist with video meta data](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/fallback.html)
+- [livestream playground](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_playground.html)
