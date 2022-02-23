@@ -54,7 +54,8 @@ Here is an example.
 ```
 **Data Format** :
 | Name | Type | Default | Description |
-| auto_replace | boolean | true | Auto replacement with current video/playlist when Livestream is `onair`. For `false` player will not replace with Livestream video automatically. (Learn More)[auto_replace] |
+| :---: | :---: | :---: | --- |
+| auto_replace | boolean | true | Auto replacement with current video/playlist when Livestream is `onair`. For `false` player will not replace with Livestream video automatically. (Learn More)[#auto_replace] |
 | info_time | number  | 5 | Interval time `in minutes` for checking Livestream video's `onair` status. [reference](https://developers.dailymotion.com/api/#video-onair-field) |
 | info_title | string | `This video is a live stream replacement.` | short note at bottom of the player if replacement video is playing |
 | info_learn | string | `Learn more..` | Anchor text to show details of the replacement information.|
