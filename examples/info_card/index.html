@@ -21,10 +21,10 @@
         }
         .controler{
             position: fixed;
-            left: 150px;
+            left: 40px;
         }
         .info-code-wrapper{
-            width: 395px;
+            width: 600px;
             margin: 25px 0px;
         }
         .info-code{
@@ -33,6 +33,8 @@
             font-family: monospace;
             border: 1px solid #cecece;
             word-break: break-all;
+            max-height: 280px;
+            overflow-y: auto;
         }
         .extra-info{
             font-style: italic;
@@ -43,14 +45,23 @@
         .extra-info.show{
             display: block;
         }
+        .info-share{
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            color: #0075ff;
+        }
         @media (max-width: 576px) { 
             .controler{
                 display: none;
             }
         }
-        input[type="radio"],input[type="color"],label{
+        input[type="radio"],input[type="color"],label,.info-share{
             cursor: pointer;
         }
+        path{fill: currentColor;}
     </style>
 </head>
 <body>
@@ -92,6 +103,7 @@
         </div>
         <div class="extra-info" id="extraInfo" >click outside to apply the code</div>
     </div>
+    <div class="info-share" id="infoShare" title="share the settings"><svg viewBox="0 0 24 24" ><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg></div>
 </div>
 <article class="main-content">
     <header>
@@ -102,7 +114,6 @@
 
     <div id="playerContainer">
         
-        <div class="dm-player" owners="suaradotcom" sort="relevance" playerId="x776e" prevideoTitle="Here's a video for you" showinfocard="true" ></div>
     </div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -119,7 +130,7 @@
     const infoOnly = document.getElementById("infoOnly");
     const infoCode = document.getElementById("infoCode");
     const extraInfo = document.getElementById("extraInfo");
-    
+    const infoShare = document.getElementById("infoShare");
 
     const divCodeSample = {
         collapsed:`<div class="dm-player" 
@@ -154,13 +165,16 @@
     colorPickerColor.addEventListener("change", updateStyle);
     
     function updateStyle(){
-        styleCode = `.dm-player{
+        let rawCode = `
+            .dm-player{
                 --dm-player-info-bg: ${hexToRgb(colorPickerBg.value)};
                 --dm-player-info-color: ${hexToRgb(colorPickerColor.value)};
             }
+        `;
+        styleCode = `<style>${rawCode}</style>
             
         `;
-        style.innerHTML = styleCode;
+        style.innerHTML = rawCode;
         updateCode();
     }
     function hexToRgb(hex) {
@@ -197,10 +211,70 @@
             window.dmceRender( document.querySelector(".dm-player") );
         }
     }
-    
-    infoCode.innerText = divCodeSample.collapsed;
     function updateCode(){
         infoCode.innerText = styleCode+defaultCode;
+    }
+
+    infoShare.addEventListener("click",()=>{
+        const jsonObj = {
+            ...styleCode && {
+                bg: colorPickerBg.value.substring(1),
+                clr: colorPickerColor.value.substring(1)
+            },
+            ...getParams()
+        }
+        console.log(jsonObj);
+        window.open(encodeURI(window.location.href.split('?')[0]+"?settings="+(
+            JSON.stringify(jsonObj)
+        )),"_blank");
+    })
+    function getParams(){
+        const attrs = playerContainer.querySelector(".dm-player").attributes;
+        let output = {};
+        for(let i = 0; i < attrs.length; i++) {
+            output[attrs[i].name] =  attrs[i].value;
+        }
+        return {
+            player: output
+        };
+    }
+    
+    const preSet = (new URLSearchParams(decodeURI(window.location.search))).get('settings');
+    if(preSet){
+        let jsonObj = JSON.parse(preSet);
+        let stCode = "";
+        infoCollapsed.checked = false;
+        if(jsonObj.bg){
+            colorPickerBg.value = "#"+jsonObj.bg;
+            colorPickerColor.value = "#"+jsonObj.clr;
+            stCode = `<style>
+                    .dm-player{
+                        --dm-player-info-bg: ${hexToRgb(jsonObj.bg)};
+                        --dm-player-info-color: ${hexToRgb(jsonObj.clr)};
+                    }
+                </style>
+                
+                `;
+        }
+        let divCode = `<div class="dm-player" 
+            ${
+                (()=>{
+                    
+                    let params = "";
+                    for (const property in jsonObj.player) {
+                        params +=`${property}="${jsonObj.player[property]}"
+                        `;
+                    }
+                    console.log(params)
+                    return params;
+                })()
+            } ></div>
+        `;
+        infoCode.innerText = stCode + divCode;
+        playerContainer.innerHTML = stCode + divCode;
+    }else {
+        infoCode.innerText = defaultCode;
+        playerContainer.innerHTML = defaultCode;
     }
 </script>
 <script type="text/javascript" async src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
