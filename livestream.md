@@ -58,14 +58,14 @@ Here is an example.
 | :---: | :---: | :---: | :---: |
 | auto_replace | boolean | true | Auto replacement with current video/playlist when Livestream is `onair`. For `false` player will not replace with Livestream video automatically. [Learn More](#auto_replace) |
 | info_time | number  | 5 | Interval time `in minutes` for checking Livestream video's `onair` status. [reference](https://developers.dailymotion.com/api/#video-onair-field) |
-| info_title | string | `This video is a live stream replacement.` | short note at bottom of the player if replacement video is playing |
+| info_title | string | `This video is a livestream replacement.` | short note at bottom of the player if replacement video is playing |
 | info_learn | string | `Learn more..` | Anchor text to show details of the replacement information.|
-| info_details | string | `The live stream is currently off air. The system will check for live stream's status every 5 minutes; you can also refresh the page.` | Details of the replacement information. |
+| info_details | string | `The livestream is currently off air. The system will check for livestream's status every 5 minutes; you can also refresh the page.` | Details of the replacement information. |
 
 ### auto_replace:
 
-By default the player will reload with Livestream video when its `onair` replacing the current video/playlist in the player. Settings `false` player will have two more features. i.e.,
-- player will not load the Livestream video even it's `onair`. `Switch to Live` button will show the details of replacement information.
+By default the player will reload with Livestream video when it is `onair` replacing the current video/playlist in the player. Setting `false` will have two more features. i.e.,
+- player will not load the Livestream video even if it is `onair`. `Switch to Live` button will show the details of replacement information.
 - The Player will also dispatch [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-onair` on document when Livestream is `onair`. Here is an example.
 
 ```js
@@ -76,7 +76,7 @@ document.addEventListener("dm-player-onair", (e)=>{
 
 ### Fetching video metadata:
 
-We trigger a [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-created` on document when player is created. We also expose [player object](https://developer.dailymotion.com/player/#player-api)(JavaScript Player API Reference) with the event. By the player object reference, you can fetch [player state](https://developer.dailymotion.com/player/#state) containing video metadata like `videoTitle`, `videoDuration` etc.
+We trigger a [customEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent) named `dm-player-created` on document when player is created. We also expose [player object](https://developer.dailymotion.com/player/#player-api)(JavaScript Player API Reference) with the event. By the player object reference, you can fetch [player state](https://developer.dailymotion.com/player/#state) containing video metadata such as `videoTitle`, `videoDuration` etc.
 
 Here is an example.
 
