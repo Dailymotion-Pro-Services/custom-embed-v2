@@ -7,3 +7,7 @@ You can append any manual or dynamic playlist to your pre-set website section so
   Embed playlist according to page origin/url with video</a> by skhassandaily (<a href="https://codepen.io/skhassandaily">@skhassandaily</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+Examples:
+- [News site ( recommend playlist : based on news site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/news/index.html)
+- [Sports site ( recommend playlist : based on sports site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/index.html)
