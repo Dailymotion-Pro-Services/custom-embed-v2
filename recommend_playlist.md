@@ -17,9 +17,9 @@
 </iframe>
 
 ### Examples:
-
-- [News site using Dailymotion Player Library Script ( recommend playlist : based on news site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/news/index.html)
-- [News site using Dailymotion Custom Embed ( recommend playlist : based on news site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/news_ce/index.html)
-
-- [Sports site using Dailymotion Player Library Script ( recommend playlist : based on sports site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/index.html)
-- [Sports site using Dailymotion Custom Embed ( recommend playlist : based on sports site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports_ce/index.html)
+- News site
+  - [Using Dailymotion Player Library Script ( recommend playlist : based on news site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/news/index.html)
+  - [Using Dailymotion Custom Embed ( recommend playlist : based on news site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/news_ce/index.html)
+- Sports site
+- [Using Dailymotion Player Library Script ( recommend playlist : based on sports site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/index.html)
+- [Using Dailymotion Custom Embed ( recommend playlist : based on sports site url  )](https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports_ce/index.html)
