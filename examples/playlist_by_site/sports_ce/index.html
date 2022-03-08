@@ -29,8 +29,8 @@
    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
    <!-- end font family -->
    <link rel="stylesheet" href="https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/css/3dslider.css" />
-   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
    <script src="https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/js/3dslider.js"></script>
    </head>
    <body class="game_info" data-spy="scroll" data-target=".header">
@@ -364,23 +364,29 @@
       <script src="https://dmvs-apac.github.io/custom-embed-v2/examples/playlist_by_site/sports/js/custom.js"></script>
    </body>
 
-   <script src="https://geo.dailymotion.com/libs/player/x938as.js"></script>
-   <script>
-        
-       const videoObj = {
-           /**
-           * Append any manual or dynamic playlist to your pre-set website section 
-           * so the queue always recommend relevant & fresh content from this specific playlist
-           * here the playlist is added based on https://codepen.io/ (page origin)
-           * It can be based on location.href i.e., page url
-           */
-            ...(/sports/g).test(location.href) && {playlist: "x6vt86"},
-            ...(/news/g).test(location.href) && {playlist: "x4d8gt"} 
-           
-       }
-       dailymotion
-       .createPlayer('my-dailymotion-player', videoObj)
-       .then((player) => console.log(player))
-       .catch((e) => console.error(e));
-   </script>
+   <script type="text/javascript" src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+<script>
+     
+     /**
+     * Append any manual or dynamic playlist to your pre-set website section 
+     * so the queue always recommend relevant & fresh content from this specific playlist
+     * here the playlist is added based on https://codepen.io/ (page origin)
+     * It can be based on location.href i.e., page url
+     */
+    const playlisId = (
+        (/sports/g).test(location.href) && "x6vt86" 
+        ||
+        (/news/g).test(location.href) && "x4d8gt"
+    );
+    document.getElementById("my-dailymotion-player")
+    .innerHTML = `
+        <div class="dm-player"
+            owners="DMAUNZ" 
+            playerId="x938as"
+            playlistId="${playlisId}">
+        </div>
+    `;
+    window.dmceRender( document.querySelector(".dm-player") );
+
+</script>
 </html>

@@ -238,23 +238,30 @@ $('.bxslider').bxSlider({
 </script>
 
 
-<script src="https://geo.dailymotion.com/libs/player/x938as.js"></script>
+<script type="text/javascript" src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
 <script>
      
-    const videoObj = {
-        /**
-           * Append any manual or dynamic playlist to your pre-set website section 
-           * so the queue always recommend relevant & fresh content from this specific playlist
-           * here the playlist is added based on https://codepen.io/ (page origin)
-           * It can be based on location.href i.e., page url
-           */
-          ...(/sports/g).test(location.href) && {playlist: "x6vt86"},
-          ...(/news/g).test(location.href) && {playlist: "x4d8gt"} 
-    }
-    dailymotion
-    .createPlayer('my-dailymotion-player', videoObj)
-    .then((player) => console.log(player))
-    .catch((e) => console.error(e));
+     /**
+     * Append any manual or dynamic playlist to your pre-set website section 
+     * so the queue always recommend relevant & fresh content from this specific playlist
+     * here the playlist is added based on https://codepen.io/ (page origin)
+     * It can be based on location.href i.e., page url
+     */
+    const playlisId = (
+        (/sports/g).test(location.href) && "x6vt86" 
+        ||
+        (/news/g).test(location.href) && "x4d8gt"
+    );
+    document.getElementById("my-dailymotion-player")
+    .innerHTML = `
+        <div class="dm-player"
+            owners="DMAUNZ" 
+            playerId="x938as"
+            playlistId="${playlisId}">
+        </div>
+    `;
+    window.dmceRender( document.querySelector(".dm-player") );
+
 </script>
 </body>
 </html>
