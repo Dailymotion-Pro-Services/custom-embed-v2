@@ -92,8 +92,8 @@ You need to do 2 things to embed the Player.
 ```
 
 ### Player features:
-The Player is implemented with [*Page Visibility API*](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API). If a player is `playing` in the active tab/page, the player goes to `pause` if the tab/page is inactive, and vice versa.
-
+- The Player is implemented with [*Page Visibility API*](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API). If a player is `playing` in the active tab/page, the player goes to `pause` if the tab/page is inactive, and vice versa.
+- Custom embed can be utilize to append any manual or dynamic playlist to your pre-set website section. [Learn more](https://dmvs-apac.github.io/custom-embed-v2/recommend_playlist)
 
 ### PIP customisation
 
