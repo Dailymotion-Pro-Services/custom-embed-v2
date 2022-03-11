@@ -1,4 +1,4 @@
-# Recommending playlist pre-set website section
+# Recommending playlist pre-set by website section
 
 [Dailymotion Player Library Script](https://developers.dailymotion.com/player/#player-library-script) / [Dailymotion Custom Embed](https://dmvs-apac.github.io/custom-embed-v2/) can be utilized to append any manual or dynamic playlist to your pre-set website section (/sports or /entertainment or /local-news etc.) so the queue always recommend relevant & fresh content from this specific playlist.
 
