@@ -12,7 +12,7 @@
 ```html
 <div class="dm-player" 
     owners="suaradotcom"
-    sort="relevance" 
+    playlistId="x7dp8f"
     playerId="x4aj"
     ShowCollection="right" >
 </div>
