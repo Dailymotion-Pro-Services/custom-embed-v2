@@ -4,7 +4,7 @@
 > `showCollection` is not compatible with `showVideoTitle`
 
 | Name | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | showCollection | string | You can set `right` or `bottom` |
 
 ### Embed Example
