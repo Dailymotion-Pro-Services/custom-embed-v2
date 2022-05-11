@@ -8,7 +8,7 @@ If player is flagged by Heavy Ad, Dailymotion throw an event `PLAYER_HEAVYADSINT
 
 Hence the custom embed always recommends using two `PLAYER_ID` for `playerId` attribute. The second PLAYER_ID will be used for Heavy Ad Intervention.
 
-In the absence of a second PLAYER_ID, Dailymotion custom embed will instead load a universal player library i.e., (player.js)[https://geo.dailymotion.com/libs/player.js] for Heavy Ad Intervention.
+In the absence of a second PLAYER_ID, Dailymotion custom embed will instead load a universal player library i.e., [player.js](https://geo.dailymotion.com/libs/player.js) for Heavy Ad Intervention.
 
 ### Embed Example :
 
