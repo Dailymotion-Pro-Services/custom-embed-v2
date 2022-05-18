@@ -4,11 +4,11 @@ In 2020 Google introduced various measures for regulating online advertising in 
 
 ### How to manage Heavy Ads with Custom Embed? 
 
-If player is flagged by Heavy Ad, Dailymotion throw an event `PLAYER_HEAVYADSINTERVENTION`. Using that event Custom embed try to load the player again. **Loading again the player bypasses the heavy ad most of the time but not always**.
+If player is flagged by Heavy Ad, Dailymotion throws an event `PLAYER_HEAVYADSINTERVENTION`. Using that event, Custom embed will try to load the player again. **Loading again the player bypasses the heavy ad most of the time but not always**.
 
-Hence the custom embed always recommends using two `PLAYER_ID` for `playerId` attribute. The second PLAYER_ID will be used for Heavy Ad Intervention.
+Hence for the custom embed, we recommends always using two `PLAYER_ID` for `playerId` attribute. The second `PLAYER_ID` will be used for Heavy Ad Intervention.
 
-In the absence of a second PLAYER_ID, Dailymotion custom embed will instead load a universal player library i.e., [player.js](https://geo.dailymotion.com/libs/player.js) for Heavy Ad Intervention.
+In the absence of a second `PLAYER_ID`, Dailymotion custom embed will instead load a universal player library i.e., [player.js](https://geo.dailymotion.com/libs/player.js) for Heavy Ad Intervention.
 
 ### Embed Example :
 
