@@ -16,6 +16,7 @@ This is the latest version of our Custom Embed framework
 - [Livestream Embed](https://dmvs-apac.github.io/custom-embed-v2/livestream)
 - [In-video Call to Action](https://dmvs-apac.github.io/custom-embed-v2/ctacard)
 - [Info card](https://dmvs-apac.github.io/custom-embed-v2/info_card)
+- [Manage Custom embed flagged by Heavy Ads](https://dmvs-apac.github.io/custom-embed-v2/heavy_ad)
 - Implementation based on [Dynamic Previews](https://www.canva.com/design/DAEGDbSibZE/cvoKs-MEOdq3paAehFLkbQ/view?website#4:l-equipe-case)
   - [Dailymotion Story](https://dmvs-apac.github.io/dynamic-preview/story)
   - [Dailymotion Previews](https://dmvs-apac.github.io/dynamic-preview/player)
