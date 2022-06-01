@@ -1,0 +1,28 @@
+
+body{
+    display: flex;
+    justify-content: space-around;
+}
+.separate{
+    max-width: 600px;
+    width: 100%;
+}
+.separate:last-child{
+    margin-top: 40px;
+}
+.code{
+    border: 1px solid #c2c2c2;
+    padding: 0px 15px;
+}
+.logs{
+    height: 150px;
+    border: 1px solid #c2c2c2;
+    overflow-y: auto;
+    padding: 0px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+    }
+}
