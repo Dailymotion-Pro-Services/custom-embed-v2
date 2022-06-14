@@ -37,6 +37,6 @@ dmScript.src = 'https://srvr.dmvs-apac.com/v2/dm-ce.min.js';
 tw.document.body.appendChild(dmScript);
 </script>
 ```
-**Conver CE code to GAM embed code [Here](https://dmvs-apac.github.io/custom-embed-v2/embed_gam/)**
+**Conver CE code to GAM embed code [Here](https://dmvs-apac.github.io/custom-embed-v2/examples/embed_gam/)**
 
 **For normal CE you can check [v2 documentation](https://dmvs-apac.github.io/custom-embed-v2/)**
