@@ -39,4 +39,4 @@ tw.document.body.appendChild(dmScript);
 ```
 
 
-***For normal CE you can check [v2 documentation](https://dmvs-apac.github.io/custom-embed-v2/)
+**For normal CE you can check [v2 documentation]**(https://dmvs-apac.github.io/custom-embed-v2/)
