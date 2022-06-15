@@ -1,0 +1,56 @@
+.controller{
+    position: fixed;
+    left: 40px;
+}
+.pip-code-wrapper{
+    width: 600px;
+    margin: 25px 0px;
+}
+.pip-code{
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    border: 1px solid #cecece;
+    word-break: break-all;
+    max-height: 280px;
+    overflow-y: auto;
+}
+.extra-info{
+    font-style: italic;
+    color: #5b5b5b;
+    padding-top: 5px;
+    display: none;
+}
+.extra-info.show{
+    display: block;
+}
+.pip-share{
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    color: #0075ff;
+}
+@media (max-width: 576px) { 
+    .controller{
+        display: none;
+    }
+}
+input[type="radio"],input[type="color"],label,.pip-share{
+    cursor: pointer;
+}
+path{fill: currentColor;}
+
+
+.main-content {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px;
+    margin-left: auto;
+}
+#playerIframe{
+    width: 375px;
+    height: 550px;
+    border: 1px solid grey;
+}
