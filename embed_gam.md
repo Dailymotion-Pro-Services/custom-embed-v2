@@ -1,6 +1,6 @@
 # Embed through GAM
-As GAM embed integration process happen through iframe ( friendly iframe ). Dailymotion CE can be done in same way. You can add a new script tag in GAM as ad code.
-Here is the example code.
+GAM embed integration process happens through iframe ( friendly iframe ). Dailymotion Custom Embed (CE) can be implemented in the same way. You can add a new script tag in GAM as an ad code.
+Below is an example code.
 
 ```html
 <script>
@@ -17,9 +17,9 @@ tw.document.body.appendChild(dmScript);
 
 ### `1px * 1px` Ad Size:
 
-Though its not recomended to use `1*1` ad size, you need to add target empty div for this settings. The player will render to the target div when GAM ad is loaded.
+Though it is not recomended to use `1*1` ad size, you need to add a target empty div for this setting. The player will render to the target div when GAM ad is loaded.
 
-Here is the example code.
+Here is an example code.
 
 ```html
 <!-- PAGE CODE -->
@@ -37,6 +37,6 @@ dmScript.src = 'https://srvr.dmvs-apac.com/v2/dm-ce.min.js';
 tw.document.body.appendChild(dmScript);
 </script>
 ```
-**Conver CE code to GAM embed code [Here](https://dmvs-apac.github.io/custom-embed-v2/examples/embed_gam/)**
+**Convert CE code to GAM embed code [Here](https://dmvs-apac.github.io/custom-embed-v2/examples/embed_gam/)**
 
 **For normal CE you can check [v2 documentation](https://dmvs-apac.github.io/custom-embed-v2/)**
