@@ -100,23 +100,28 @@ You need to do 2 things to embed the Player.
 
 The PiP will be displayed at the bottom right on wide screens and at the top on narrow screens by default. Its possible to reposition the PiP by adding specific CSS code for the dedicated element IDs. You can view the CSS samples below or view a live demo in our codepen.io PiP collection [here](https://codepen.io/collection/NqPeEy).
 
-- `dailymotion-pip-large-viewport` targets PiP for “corner displaying” on large viewports
-- `dailymotion-pip-small-viewport` targets PiP for “sticky displaying” on small viewports
-Add the !important keyword to all your custom CSS rules in order to override already existing styles and behaviors, you will find below some common customization examples.
+| CSS SELECTOR | INFO |
+| :---: | :---: |
+| `#dailymotion-pip-large-viewport` | Targets PiP for “corner display” on large viewports |
+| `#dailymotion-pip-small-viewport` | Targets PiP for “top sticky display” on small viewports |
 
-#### Reposition PIP desktop - top right
+<iframe height="300" style="width: 100%;" scrolling="no" title=" Player embed script - reposition PIP mobile[top padding]" src="https://codepen.io/team/dailymotion-developer/embed/preview/abJOrMJ?default-tab=css%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/team/dailymotion-developer/pen/abJOrMJ">
+   Player embed script - reposition PIP mobile[top padding]</a> by dailymotion-developer (<a href="https://codepen.io/team/dailymotion-developer">@dailymotion-developer</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+#### Example: PIP desktop – top right:
 ```
 #dailymotion-pip-large-viewport {
-  right: 0 !important;
-  top: 0 !important;
+  --position-right: 0;
+  --position-top: 0;
 }
 ```
-#### Reposition PIP desktop - bottom left without margin
+#### Example: Reposition PIP mobile – below menu bar:
 ```
-#dailymotion-pip-large-viewport {
-  bottom: 0 !important;
-  margin: 0 !important;
-  left: 0 !important;
+#dailymotion-pip-small-viewport {  
+  --position-top: 10;
 }
 ```
 #### Reposition PIP mobile - below menu bar
@@ -125,11 +130,10 @@ Add the !important keyword to all your custom CSS rules in order to override alr
   top: 50px !important;
 }
 ```
-#### Reposition PIP mobile - bottom of the page
+#### Reposition PIP mobile – bottom of the page:
 ```
 #dailymotion-pip-small-viewport {
-  bottom: 0px !important;
-  top: initial !important;
+  --position-bottom: 0;
 }
 ```
 #### Customizing PIP look and feel on all viewports 
@@ -140,13 +144,11 @@ You can add any rule to deep customize the PiP look and feel. For example by rem
   box-shadow: none !important;
 }
 ```
-#### Customizing PIP dynamic position
-You can dynamically change the PIP position based on your requirments. For example - PIP in mobile can overlay unfolded/extended menu. By using menu function based on the page, PIP can be changed dynamically. Check out below some example pages.
+> The position of PIP can not be changed dynamically by changing the css while its active. Check out below some example pages.
 
 ### Example Links
 - [PIP simple menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/)
 - [PIP overlay menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_overlay_menu/)
-- [PIP dynamic postion - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_dynamic_position/)
 
 
 
