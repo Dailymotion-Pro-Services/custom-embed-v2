@@ -144,7 +144,7 @@ You can add any rule to deep customize the PiP look and feel. For example by rem
   box-shadow: none !important;
 }
 ```
-> The position of PIP can not be changed dynamically by changing the css while its active. Check out below some example pages.
+> The position of PIP can not be changed dynamically by changing the CSS while it's active. Check out below some example pages.
 
 ### Example Links
 - [PIP simple menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/)
