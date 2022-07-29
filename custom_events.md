@@ -9,7 +9,7 @@ Custom Embed V2 provide some [CustomEvents](https://developer.mozilla.org/en-US/
     document.addEventListener("dm-player-create",(e)=>{
         console.log(e.detail); // {player: playerObject}
     })
-<script>
+</script>
 ```
 
 ### Events : 
