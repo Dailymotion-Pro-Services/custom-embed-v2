@@ -19,6 +19,7 @@ This is the latest version of our Custom Embed framework
   - [ShowCollection](https://dmvs-apac.github.io/custom-embed-v2/show_collection)
   - [Manage Custom Embed for Heavy Ad](https://dmvs-apac.github.io/custom-embed-v2/heavy_ad)
   - [Events on Custom Embed](https://dmvs-apac.github.io/custom-embed-v2/custom_events)
+  - [Set Thumbnail before `ad_start`/`video_start`](https://dmvs-apac.github.io/custom-embed-v2/thumbnail_before_adstart_videostart)
   
 - [Dynamic Previews](https://www.canva.com/design/DAEGDbSibZE/cvoKs-MEOdq3paAehFLkbQ/view?website#4:l-equipe-case)
   - [Dailymotion Story](https://dmvs-apac.github.io/dynamic-preview/story)
