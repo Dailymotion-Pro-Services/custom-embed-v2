@@ -114,20 +114,20 @@ The PiP will be displayed at the bottom right on wide screens and at the top on 
 #### Example: PIP desktop – top right:
 ```
 #dailymotion-pip-large-viewport {
-  --position-right: 0;
-  --position-top: 0;
+  --position-right: 0px;
+  --position-top: 0px;
 }
 ```
 #### Example: Reposition PIP mobile – below menu bar:
 ```
 #dailymotion-pip-small-viewport {  
-  --position-top: 10;
+  --position-top: 10px; /* can be any CSS unit: like em, rem, etc */
 }
 ```
 #### Reposition PIP mobile - below menu bar
 ```
 #dailymotion-pip-small-viewport {
-  top: 50px !important;
+  --position-top: 50px !important;
 }
 ```
 #### Reposition PIP mobile – bottom of the page:
@@ -144,7 +144,14 @@ You can add any rule to deep customize the PiP look and feel. For example by rem
   box-shadow: none !important;
 }
 ```
-> The position of PIP can not be changed dynamically by changing the CSS while it's active. Check out below some example pages.
+
+### Dynamic changing of PIP position:
+The position of PIP can be changed dynamically by changing the CSS while it's active. Check the codepen below
+<iframe height="300" style="width: 100%;" scrolling="no" title="Dynamic changing PIP position" src="https://codepen.io/skhassandaily/embed/preview/MWQxyrM?default-tab=css%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/skhassandaily/pen/MWQxyrM">
+  Dynamic changing PIP position</a> by skhassandaily (<a href="https://codepen.io/skhassandaily">@skhassandaily</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ### Example Links
 - [PIP simple menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/)
