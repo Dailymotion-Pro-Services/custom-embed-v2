@@ -25,12 +25,12 @@ This method can be used to render the player on targeted `HTMLElement`.
 
 This is a [simple playground](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/).
 
-### window["dmcePlayOnMulti"]:
-
-The Custom embed player always pause the previous player if another player loads. Although you can set `dmcePlayOnMulti` value in window object as `true` which will not pause any previous player.
 
 The same function also can be used to render the player for infinite scrolling. Here is the example page
 [infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
 
 
+### window["dmcePlayOnMulti"]:
+
+The Custom embed player always pause the previous player if another player loads. Although you can set `dmcePlayOnMulti` value in window object as `true` which will not pause any previous player.
 
