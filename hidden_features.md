@@ -7,6 +7,7 @@ We developed a few extra parameters for video embed contexts requiring bespoke f
 | Name | Type | Description |
 | :---: | :---: | --- |
 | closeButton | boolean | This is a custom button which overrides close button from the Dailymotion player to destroy the player instead of hiding it. |
+| closePipButton | boolean | This is a custom button which will apear outside of PIP the Dailymotion player. This will close the PIP and can work with `showPipButtonAfter` |
 | showAdOnly | boolean | This is if partners want only to show a video if there is an ad before it. If `no-ad` the player will be destroyed and never shown to the viewer |
 | hideButton | boolean | This is a custom button for hiding the PiP Player instead of closing it permanently. The visitor can unhide it when they want to watch it again. This will override the original controls. |
 | showPipButtonAfter | number | This is a custom param that controls when the hide button will show once an ad creative is displayed. You can define the number in seconds. By default, if you don't put any number it will use default 5 seconds. |
