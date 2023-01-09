@@ -41,6 +41,7 @@ You need to do 2 things to embed the Player.
 | searchInPlaylist | string | provide playlist xid to search videos within the playlist |
 | syndication | string | Syndication key. Needed if the video content does not belong to your channel / network of channels AND/OR if you embed the Dailymotion video player into specific 3rd party environments (Google AMP, Facebook IA, OTT products, in-app, operated but not owned web domains...). This enables tracking and targeting. |
 | customParams | string | To add declarative values as parameter; this could be an advertising, environment-specific value that the dailymotion player cannot understand on its own, for instance 'column-player' versus 'main-article'. |
+| customConfig | string | This is an improvement of `customParams`. Now, it has the possibility of having multiple values with multi purposes as well. You can check the sample below |
 | referrerPolicy | string | The Referrer-Policy HTTP header controls how much referrer information (sent via the Referer header) should be included with requests. You can read more on this [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) documentation. |
 | languages | string | Languages of the video if you want to target specific languages only for a website. To put more than 1 value you can separate by `","`. E.g. `"en,fr"`.For more details check here: [Languages](https://developer.dailymotion.com/api/#languages) |
 | keywordsSelector | string | Define which meta tag you will use for the contextual embed. If you leave it blank it will get the `<h1>` the words in the meta tag will be chunked, sanitized, and matched against your own video catalog or the video catalog of the 3rd parties you include in your script. |
@@ -61,6 +62,12 @@ You need to do 2 things to embed the Player.
 | clientType | string | This is another in-app parameter similar to `client_type` in [required-in-app-parameters](https://developer.dailymotion.com/player/#required-in-app-parameters) |
 
 
+### Will Be Deprecated
+
+| Name | Type | Description |
+| :---: | :---: | --- |
+| customParams | string | will be replaced by customConfig |
+
 ### Deprecated Parameters From V1
 
 | Name | Type | Description |
@@ -78,6 +85,7 @@ You need to do 2 things to embed the Player.
    searchInPlaylist="xxpid"
    syndication="1234567"
    customParams="custom"
+   customConfig="[dynamiciu]=23328537%2FAdParams_Test;[keyvalues]=category%3Dsports%26section%3Dvideo"
    keywordsSelector="meta[name='keywords']"
    rangeDay="30,0,90"
    preVideoTitle="See also:"
@@ -91,6 +99,8 @@ You need to do 2 things to embed the Player.
    lazyload="true"
 ></div>
 ```
+
+In the sample above for `customConfig` value you realized there are text `%2f`, `%3d`, and `%26`. All of that number is a URL encoding. That's actually a character of `/`, `=`, and `&`. You can visit this [URL encoding link](https://www.w3schools.com/tags/ref_urlencode.ASP) for a complete list.
 
 ### Player features:
 - The Player is implemented with [*Page Visibility API*](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API). If a player is `playing` in the active tab/page, the player goes to `pause` if the tab/page is inactive, and vice versa.
