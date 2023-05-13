@@ -1,12 +1,6 @@
 # DM-Video-Collection :
 
-DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES](https://developers.dailymotion.com/player/#player-embed-script) and [https://developers.dailymotion.com/player/#player-library-script].  It can be set as `right` or `bottom` based on the position of the playlist.
-
-
-| Name | Type | Description |
-| --- | --- | --- |
-| showCollection | string | You can set `right` or `bottom` |
-
+DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES](https://developers.dailymotion.com/player/#player-embed-script) and [https://developers.dailymotion.com/player/#player-library-script].  It can be set as `right` or `bottom` based on the position of the playlist. By default its `bottom`.
 
 ## With PES :
 
