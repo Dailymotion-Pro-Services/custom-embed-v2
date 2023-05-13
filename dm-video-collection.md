@@ -1,6 +1,6 @@
 # DM-Video-Collection :
 
-DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES](https://developers.dailymotion.com/player/#player-embed-script) and [https://developers.dailymotion.com/player/#player-library-script].  It can be set as `right`( [To set right position]() ) or `bottom` based on the position of the playlist. By default its `bottom`.
+DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES](https://developers.dailymotion.com/player/#player-embed-script) and [https://developers.dailymotion.com/player/#player-library-script].  It can be set as `right`( [To set right position](#to-set-right-position-) ) or `bottom` based on the position of the playlist. By default its `bottom`.
 
 ## With PES :
 
@@ -89,7 +89,8 @@ To Pass the information for PLS use the `dm-render-collection` event along with 
 - [Video Collection for PLS](https://staging.dmvs-apac.com/DM-Video-collection/lab/pls-demo.html)
 
 ## To set `right` position :
-    As you can see the above example of [Video Collection for PLS](https://staging.dmvs-apac.com/DM-Video-collection/lab/pls-demo.html), the video collection is at rigt position. Here are the required steps to implement that:
+
+As you can see the above example of [Video Collection for PLS](https://staging.dmvs-apac.com/DM-Video-collection/lab/pls-demo.html), the video collection is at rigt position. Here are the required steps to implement that:
     - Wrap the player ( player script for PES/ player holder div for PLS ) with `dm-collection-right-side` class div.
     - use [Attributes](#attributes) or [Parameters](#parameters) with `right` value.
     
