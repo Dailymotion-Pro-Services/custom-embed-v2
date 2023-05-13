@@ -96,8 +96,10 @@ As you can see the above example of [Video Collection for PLS](https://staging.d
     
 ### Embed Example : 
 ```html
-<!-- PES script -->
-<script src="https://geo.dailymotion.com/player.js" data-video="x8kgkea" id="player-id"></script>
+<div class="`dm-collection-right-side">
+    <!-- PES script -->
+    <script src="https://geo.dailymotion.com/player.js" data-video="x8kgkea" id="player-id"></script>
+</div>
 
 <!-- DM-Video-Collection script -->
 <script  
