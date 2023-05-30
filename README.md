@@ -29,3 +29,5 @@ This is the latest version of our Custom Embed framework
 
 - [Recommending playlist pre-set website section](https://dmvs-apac.github.io/custom-embed-v2/recommend_playlist)
 
+- [DM-Video-Collection](https://dmvs-apac.github.io/custom-embed-v2/dm-video-collection)
+
