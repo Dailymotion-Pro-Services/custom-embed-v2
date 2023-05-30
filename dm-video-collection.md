@@ -16,7 +16,7 @@ This plugin works with player embed script.
 <script  
     src="https://staging.dmvs-apac.com/DM-Video-collection/dm-video-collection.js" 
     data-pes-script-id="player-id"
-    data-tags="viral"
+    data-video-id="x8kgkea"
     data-owners="australiancommunitymedia"
     data-num-videos="10">
 </script>
@@ -29,7 +29,8 @@ To pass the information for PES, use `data-**` attributes of the DM-Video-Collec
 | Attribute | Type | Description |
 | --- | --- | --- |
 | <b>data-pes-script-id</b> <br /> `Mandatory` | string | To pass DOM id of PES script |
-| <b>data-tags</b> <br /> `Mandatory` | string | To add tags to fetch relevant videos from API. To put more than 1 you can separate by ","|
+| <b>data-video-id</b>  `Mandatory` <br />| string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
+| <b>data-tags</b> <br />| string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1 you can separate by ","|
 | <b>data-owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>data-num-videos</b>| number | To set number of videos to fetch. By default it is 7`|
 | <b>data-position</b>| `bottom` or `right` | To set position of the video collection.|
@@ -80,7 +81,8 @@ To Pass the information for PLS, use the `dm-render-collection` event along with
 | Parameter | Type | Description |
 | --- | --- | --- |
 | <b>player</b> <br /> `Mandatory` | Player Object | To pass Player Object for PLS script |
-| <b>tags</b> <br /> `Mandatory` | string | To add tags to fetch relevant videos from API. To put more than 1, you can separate by ","|
+| <b>videoId</b> <br /> `Mandatory` | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
+| <b>tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1, you can separate by ","|
 | <b>owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>numOfVideos</b>| number | To set number videos to fetch. By default it's 7`|
 | <b>position</b>| `buttom` or `right` | To set position of the video collection.|
@@ -112,6 +114,13 @@ As you can see in the above example of [Video Collection for PLS](https://stagin
     >
 </script>
 ```    
+
+## Relevant Video :
+To fetch relevant video from [API](https://developers.dailymotion.com/api/#video-filters) DM-Video-Collection first check tags attribute( for PES ) or params( for PLS ). If tags not given, the plugin gets tags with given video id from [API](https://developers.dailymotion.com/api/#video-fields). Taking the **first tag** from tags array the plugin fetch relevant videos.
+
+### Example Link
+- [Video Collection for PES with auto tag](https://staging.dmvs-apac.com/DM-Video-collection/lab/pes-demo-auto.html)
+
 ## Style Adjustment :
 
 There are predefined [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) which can be adjusted to change the color of the playlist. [Learn More](#embed-link)
