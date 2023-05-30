@@ -1,6 +1,6 @@
 # DM-Video-Collection :
 
-DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES - Player Embed Script](https://developers.dailymotion.com/player/#player-embed-script) and [PLS - Player Library Script](https://developers.dailymotion.com/player/#player-library-script).  It can be set as `right`( [To set right position](#to-set-the-right-position-) ) or `bottom` based on the position of the playlist. By default, it is set to `bottom`.
+DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES - Player Embed Script](https://developers.dailymotion.com/player/#player-embed-script) and [PLS - Player Library Script](https://developers.dailymotion.com/player/#player-library-script).  It can be set as `right`( [To set right position](#to-set-the-right-position) ) or `bottom` based on the position of the playlist. By default, it is set to `bottom`.
 
 ## With PES :
 
@@ -29,8 +29,8 @@ To pass the information for PES, use `data-**` attributes of the DM-Video-Collec
 | Attribute | Type | Description |
 | --- | --- | --- |
 | <b>data-pes-script-id</b> <br /> `Mandatory` | string | To pass DOM id of PES script |
-| <b>data-video-id</b>  `Mandatory` <br />| string | To add video id. This helps to fetch [relevant videos from API](#relevant-video-).|
-| <b>data-tags</b> <br />| string | To add tags to fetch [relevant videos from API](#relevant-video-). To put more than 1 you can separate by ","|
+| <b>data-video-id</b>  `Mandatory` <br />| string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
+| <b>data-tags</b> <br />| string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1 you can separate by ","|
 | <b>data-owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>data-num-videos</b>| number | To set number of videos to fetch. By default, it is 7`|
 | <b>data-position</b>| `bottom` or `right` | To set position of the video collection.|
@@ -81,8 +81,8 @@ To Pass the information for PLS, use the `dm-render-collection` event along with
 | Parameter | Type | Description |
 | --- | --- | --- |
 | <b>player</b> <br /> `Mandatory` | Player Object | To pass Player Object for PLS script |
-| <b>videoId</b> <br /> `Mandatory` | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video-).|
-| <b>tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video-). To put more than 1, you can separate by ","|
+| <b>videoId</b> <br /> `Mandatory` | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
+| <b>tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1, you can separate by ","|
 | <b>owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>numOfVideos</b>| number | To set number videos to fetch. By default, it's 7`|
 | <b>position</b>| `buttom` or `right` | To set position of the video collection.|
@@ -90,7 +90,7 @@ To Pass the information for PLS, use the `dm-render-collection` event along with
 ### Example Link
 - [Video Collection for PLS](https://staging.dmvs-apac.com/DM-Video-collection/lab/pls-demo.html)
 
-## To set the `right` position :
+## To set the `right` position:
 
 As you can see in the above example of [Video Collection for PLS](https://staging.dmvs-apac.com/DM-Video-collection/lab/pls-demo.html), the video collection is set to the rigt position. Here are the required steps to implement it:
 - Wrap the player ( player script for PES/ player holder div for PLS ) with `dm-collection-right-side` class div.
