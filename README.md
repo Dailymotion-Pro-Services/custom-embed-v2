@@ -31,3 +31,5 @@ This is the latest version of our Custom Embed framework
 
 - [DM-Video-Collection](https://dmvs-apac.github.io/custom-embed-v2/dm-video-collection)
 
+- [Universal Advance Search](https://dmvs-apac.github.io/dm-search-iframe-doc/)
+
