@@ -22,7 +22,7 @@ Copy the `html` code below and host the page on your server as `dm-player.html`.
           <div class="dm-player" ></div>
 
           <script async src="https://cdn.ampproject.org/video-iframe-integration-v0.js"></script>
-          <script src="https://srvr.dmvs-apac.com/v2/dm-amp.min.js"></script>
+          <script src="https://statics.dmcdn.net/c/dm-amp.min.js"></script>
       </body>
   </html>
 ```
@@ -76,6 +76,7 @@ Check below the table for details available parameters
 | data-param-rangeday | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
 | data-param-mute | boolean |  to set player mute option. By default it's false` ( default behaviour: The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | data-param-fallbackplaylist | string |  If there is no relevance videos it will fallback to embed a specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
+| data-param-loop | boolean (string) | This param is only accept `true` and `false` |
 
 ### Example Links
 - [AMP Simple Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp/)
