@@ -58,13 +58,13 @@ The plugin can work also for the Player Library Script.
 <script>
     dailymotion
     .createPlayer('my-dailymotion-player', {
-        video: 'x84sh87',
+        video: 'x8kgkea',
     })
     .then((player) => {
         document.dispatchEvent(new CustomEvent('dm-render-collection',{
             detail: {
                 player : player,
-                tags: "viral",
+                videoId: "x8kgkea",
                 owners: "australiancommunitymedia",
                 numOfVideos: 10
             }
