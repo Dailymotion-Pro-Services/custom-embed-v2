@@ -52,7 +52,6 @@ You need to do 2 things to embed the Player.
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
 | showInfoCard | boolean/string | Info of the video in a card below the video player.the info card contains both video title, description etc. [Learn more](https://dmvs-apac.github.io/custom-embed-v2/info_card) |
 | ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dmvs-apac.github.io/custom-embed-v2/ctacard) |
-| showOutsidePlaylist | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. |
 | showCollection | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. [Learn More](https://dmvs-apac.github.io/custom-embed-v2/show_collection) |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
@@ -67,6 +66,7 @@ You need to do 2 things to embed the Player.
 | Name | Type | Description |
 | :---: | :---: | --- |
 | customParams | string | will be replaced by customConfig |
+| showOutsidePlaylist | string | we will suggest to use `showCollection` |
 
 ### Deprecated Parameters From V1
 
@@ -75,7 +75,7 @@ You need to do 2 things to embed the Player.
 | startDate | string | Deprecated since V2 |
 
 **Embed Example :**
-```
+```html
 <div class="dm-player"
    playerId="xxxx"
    sort="relevance,recent,random"
@@ -84,19 +84,19 @@ You need to do 2 things to embed the Player.
    excludeIds="xxxid,xyxid"
    searchInPlaylist="xxpid"
    syndication="1234567"
-   customParams="custom"
    customConfig="[dynamiciu]=23328537%2FAdParams_Test;[keyvalues]=category%3Dsports%26section%3Dvideo"
    keywordsSelector="meta[name='keywords']"
    rangeDay="30,0,90"
    preVideoTitle="See also:"
    showVideoTitle="true"
    showInfoCard="true"
-   showOutsidePlaylist="bottom"
+   showCollection="bottom"
    videoId="x7webup"
    privateVideoId="k6sgZEzVrMV3vHwvmX6"
    playlistId="x6mrls"
    blockKeywords="restricted,keywords,here"
    lazyload="true"
+   referrerPolicy="no-referrer-when-downgrade"
 ></div>
 ```
 
