@@ -33,7 +33,7 @@ var tw = window.top, sfe = window.frameElement,dmScript;
 tw.document.querySelector(".playerContainer").innerHTML = ("<div class='dm-player' playerId='{PLAYER_ID}' sort='recent' owners='{YOUR_CHANNEL_NAME}' ></div>");
 dmScript= document.createElement('script');
 dmScript.type = 'text/javascript';
-dmScript.src = 'https://srvr.dmvs-apac.com/v2/dm-ce.min.js';
+dmScript.src = 'https://statics.dmcdn.net/c/dm-ce.min.js';
 tw.document.body.appendChild(dmScript);
 </script>
 ```
