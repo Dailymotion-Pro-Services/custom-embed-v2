@@ -1,4 +1,4 @@
-# Connect Custom Embed data to Google Analytics 4 (GA4) :
+# Connect player from Custom Embed to Google Analytics 4 (GA4) :
 
 > [!IMPORTANT]  
 > Following this documentation is about providing extra steps that you need for connecting your Custom embed player to Google Analytics 4 (GA4). Please follow the steps first from [Connect your Dailymotion Player data to Google Analytics 4 (GA4)](https://developers.dailymotion.com/guides/connect-to-google-analytics/).
