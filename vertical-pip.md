@@ -24,11 +24,11 @@ Aspect Ratio 9/16
         transform: none !important;
     }
     </style>
-    <script src="https://geo.dailymotion.com/player/{{your-player-id}}.js" data-playlist="{{your-playlist-id}}" data-video="{{your-video-id}}"></script> 
+    <script src="https://geo.dailymotion.com/player/your-player-id.js" data-playlist="your-playlist-id" data-video="your-video-id"></script> 
 </div>
 ```
 
-All the snippets code above are adjustable as you need. Feel free to reconfigure it.
+All the snippets code above are adjustable as you need. Feel free to reconfigure it. You can choose one of them between `data-playlist` or `data-video`.
 
 
 ### Example link
