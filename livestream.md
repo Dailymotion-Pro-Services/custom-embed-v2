@@ -17,7 +17,7 @@ You only need to add your livestream's `xid` in `videoId` field. Here is an exam
 This also works with private videos using a `kid` in the `privateVideoId`.
 
 ### Livestream replacement logic:
-
+<p>
 <img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" style="max-width: 400px" />
 
 - If the livestream is `onair`, the player will embed the livestream.
@@ -25,7 +25,7 @@ This also works with private videos using a `kid` in the `privateVideoId`.
 - if the livestream is `offair` and **not scheduled**, The player will embed will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream and embed that video.
 - if the livestream is `offair`, **not scheduled with no record**, the player check `fallbackplaylist` parameter present then player will embed the playlist.
 - if the livestream is `offair`, **not scheduled with no record and no `fallbackplaylist` parameter**, The player will fetch a recent video from the given `CHANNEL_NAME` to embed.
-<br /> 
+</p>
 
 **Livestream replacement with `fallbackPlaylist`:** Here is an example to add `fallbackplaylist` parameter.
 ```html
