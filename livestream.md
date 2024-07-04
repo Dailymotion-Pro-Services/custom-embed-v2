@@ -1,3 +1,6 @@
+ul{
+    line-height:40px;
+}
 # Livestream video embed
 
 Dailymotion custom embed supports the embed of a livestream.
@@ -20,11 +23,11 @@ This also works with private videos using a `kid` in the `privateVideoId`.
 
 <img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" style="max-width: 400px" />
 
-- If the livestream is `onair`, the player will embed the livestream.<br>
-- if the livestream is `offair` and **scheduled**, the player will embed the livestream.<br>
-- if the livestream is `offair` and **not scheduled**, The player will embed will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream and embed that video.<br>
-- if the livestream is `offair`, **not scheduled with no record**, the player check `fallbackplaylist` parameter present then player will embed the playlist.<br>
-- if the livestream is `offair`, **not scheduled with no record and no `fallbackplaylist` parameter**, The player will fetch a recent video from the given `CHANNEL_NAME` to embed.<br>
+- If the livestream is `onair`, the player will embed the livestream.
+- if the livestream is `offair` and **scheduled**, the player will embed the livestream.
+- if the livestream is `offair` and **not scheduled**, The player will embed will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream and embed that video.
+- if the livestream is `offair`, **not scheduled with no record**, the player check `fallbackplaylist` parameter present then player will embed the playlist.
+- if the livestream is `offair`, **not scheduled with no record and no `fallbackplaylist` parameter**, The player will fetch a recent video from the given `CHANNEL_NAME` to embed.
 <p style="clear: both;"></p>
 
 **Livestream replacement with `fallbackPlaylist`:** Here is an example to add `fallbackplaylist` parameter.
