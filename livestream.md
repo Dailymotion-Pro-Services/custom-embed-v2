@@ -16,11 +16,17 @@ You only need to add your livestream's `xid` in `videoId` field. Here is an exam
 
 This also works with private videos using a `kid` in the `privateVideoId`.
 
-### Livestream replacement :
+### Livestream replacement logic:
 
-We provide Livestream replacement when Livestream is `off air`. If Livestream video is `offair`, the player will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream. If there is no recorded video found, the video player will fetch a recent video from the given `CHANNEL_NAME`.
+<img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" style="max-width: 400px" />
 
-**Livestream replacement with `fallbackPlaylist`:** If livestream video is off air and `fallbackplaylist` parameter present then player will play the playlist. Here is an example.
+- If the livestream is `onair`, the player will embed the livestream.
+- if the livestream is `offair` and **scheduled**, the player will embed the livestream.
+- if the livestream is `offair` and **not scheduled**, The player will embed will find any [recording](https://developer.dailymotion.com/api/#video-recordings-connection) related to the Livestream and embed that video.
+- if the livestream is `offair, **not scheduled with no record**, the player check `fallbackplaylist` parameter present then player will embed the playlist.
+- if the livestream is `offair, **not scheduled with no record and no `fallbackplaylist` parameter**, The player will fetch a recent video from the given `CHANNEL_NAME` to embed.
+
+**Livestream replacement with `fallbackPlaylist`:** Here is an example to add `fallbackplaylist` parameter.
 ```html
 <div class="dm-player"
     playerId="{PLAYER_ID}"
@@ -31,8 +37,6 @@ We provide Livestream replacement when Livestream is `off air`. If Livestream vi
 ```
 
 We provide also information on the player notifying that the current video is a replacement of a Livestream. The player also checks in every 5 minutes ( by default ) from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the Livestream. If the Livestream is live / `on air` then the player will change back the current video to Livestream instead. Even when the player loads, the player checks Livestream `on air` status and follows the same flow.
-
-<img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" />
 
 ### Replacement information:
 
