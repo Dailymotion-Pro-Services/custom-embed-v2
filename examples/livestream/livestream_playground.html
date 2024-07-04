@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,16 +71,24 @@
 <div class="controler">
     <p>Choose your Sample Code:</p>
     <div>
-        <input type="radio" id="liveOnair" name="live_code" value="onair" checked>
-        <label for="liveOnair">livestream : On Air</label>
+        <input type="radio" id="onair" name="live_code" value="onair" checked>
+        <label for="onair">livestream : On Air</label>
     </div>
     <div>
-        <input type="radio" id="liveOffair" name="live_code" value="offair">
-        <label for="liveOffair">livestream : Off Air</label>
+        <input type="radio" id="scheduled" name="live_code" value="scheduled">
+        <label for="scheduled">livestream : Scheduled</label>
     </div>
     <div>
-        <input type="radio" id="liveSoon" name="live_code" value="soon">
-        <label for="liveSoon">livestream : Soon to be on Air</label>
+        <input type="radio" id="record" name="live_code" value="record">
+        <label for="record">livestream : offair replace with recordings </label>
+    </div>
+    <div>
+        <input type="radio" id="recent" name="live_code" value="recent">
+        <label for="recent">livestream : offair + No record replace with recent </label>
+    </div>
+    <div>
+        <input type="radio" id="fallback" name="live_code" value="fallback">
+        <label for="fallback">livestream : offair replace with fallbackplaylist</label>
     </div>
     <br>
     <div>
@@ -112,9 +122,6 @@
 
 <script>
     const playerContainer = document.getElementById("playerContainer");
-    const liveOnair = document.getElementById("liveOnair");
-    const liveOffair = document.getElementById("liveOffair");
-    const liveSoon = document.getElementById("liveSoon");
     const infoReplace = document.getElementById("infoReplace");
     const infoCode = document.getElementById("infoCode");
     const extraInfo = document.getElementById("extraInfo");
@@ -127,24 +134,34 @@
                 owners="Audacy"
                 videoId="x8uae8w">
             </div>`,
-        offair: `<div class="dm-player" 
+        scheduled: `<div class="dm-player" 
+                playerId="x3aq0"
+                owners="dm_skhassan"
+                videoId="x81ypgj">
+            </div>`,
+        record: `<div class="dm-player" 
+                playerId="x3aq0"
+                owners="quotidianonazionale"
+                videoId="x90ms66">
+            </div>`,
+        recent: `<div class="dm-player" 
                 playerId="x3aq0"
                 owners="Audacy"
                 videoId="x8uafc0">
             </div>`,
-        soon: `<div class="dm-player" 
+        fallback: `<div class="dm-player" 
                 playerId="x3aq0"
                 owners="dm_skhassan"
-                videoId="x81ypgj">
-            </div>
-        `
+                videoId="x81y4m4"
+                fallbackplaylist="x7l1tp">
+            </div>`,
     }
     let defaultCode = divCodeSample.onair;
     let replaceCode = "";
 
-    liveOnair.addEventListener("change", reloadPlayer);
-    liveOffair.addEventListener("change", reloadPlayer);
-    liveSoon.addEventListener("change", reloadPlayer);
+    document.querySelectorAll("[name='live_code']").forEach((el)=>{
+        el.addEventListener("change", reloadPlayer);
+    })
     
     infoReplace.addEventListener("click", () => {
         if(infoReplace.checked ) {
@@ -274,7 +291,6 @@
         playerContainer.innerHTML = defaultCode;
     }
 </script>
-
-<script type="text/javascript" async src="https://srvr.dmvs-apac.com/v2/dm-ce.min.js"></script>
+<script type="text/javascript" async src="https://statics.dmcdn.net/c/dm-ce.min.js"></script>
 
 </html>
