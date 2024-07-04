@@ -32,8 +32,8 @@ We provide Livestream replacement when Livestream is `off air`. If Livestream vi
 
 We provide also information on the player notifying that the current video is a replacement of a Livestream. The player also checks in every 5 minutes ( by default ) from the [DATA-API](https://developer.dailymotion.com/api/#video-onair-field) the `onair` status of the Livestream. If the Livestream is live / `on air` then the player will change back the current video to Livestream instead. Even when the player loads, the player checks Livestream `on air` status and follows the same flow.
 
-
 <img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" />
+
 ### Replacement information:
 
 We also provide the option to change [auto replacement](#auto_replace), the interval and the text in the information when Livestream is replaced. By adding `<script type="application/json" id="dm_player_text" >` tag, the text in the information can be changed.
