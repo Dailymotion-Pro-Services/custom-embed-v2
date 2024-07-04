@@ -1,6 +1,8 @@
+<style>
 ul{
     line-height:40px;
 }
+</style>
 # Livestream video embed
 
 Dailymotion custom embed supports the embed of a livestream.
