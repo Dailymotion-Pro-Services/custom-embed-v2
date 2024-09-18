@@ -233,7 +233,7 @@
     if(preSet){
         let jsonObj = JSON.parse(preSet);
         let rpCode = "";
-        liveOnair.checked = false;
+        document.querySelector("#onair").checked = false;
         if(jsonObj.livestream){
             rpCode = `
                 <script type="application/json" id="dm_player_text">
