@@ -22,7 +22,7 @@ convertSimple.addEventListener("click",()=>{
     sfe.parentNode.insertAdjacentHTML("beforeBegin", "${ceCode.innerText}");
     dmScript= document.createElement('script');
     dmScript.type = 'text/javascript';
-    dmScript.src = 'https://srvr.dmvs-apac.com/v2/dm-ce.min.js';
+    dmScript.src = 'https://statics.dmcdn.net/c/dm-ce.min.js';
     tw.document.body.appendChild(dmScript);
     </script>`);
     loadThePageCode(false);
