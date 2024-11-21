@@ -11,7 +11,7 @@ We developed a few extra parameters for video embed contexts requiring bespoke f
 | showAdOnly | boolean/number | Set it `true` if you want only to show a video if there is an ad before it. If `no-ad` the player will be destroyed and never shown to the viewer. You can also set it to a numeric value (e.g., `showAdOnly=5`) which will attempt to reload the player 5 times until there is an ad. If still `no-ad` the player will be destroyed. |
 | hideButton | boolean | This is a custom button for hiding the PiP Player instead of closing it permanently. The visitor can unhide it when they want to watch it again. This will override the original controls. |
 | showPipButtonAfter | number | This is a custom param that controls when the hide button will show once an ad creative is displayed. You can define the number in seconds. By default, if you don't put any number it will use default 5 seconds. |
-| smallPip | boolean | This is a custom param that change PIP size for mobile view with custom controls over PIP. [Sample page](https://dmvs-apac.github.io/custom-embed-v2/examples/small_pip/)|
+| smallPip | boolean | This is a custom param that change PIP size for mobile view with custom controls over PIP. [Sample page](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/small_pip/)|
 | omidSDK | boolean |  To avoid a policy violation with Google’s OMID verification script, set it `true`. [More on OMID here FYI](https://iabtechlab.com/standards/open-measurement-sdk/)|
 
 If you don't want to use this, you just don't need to use the parameters inside the container.
