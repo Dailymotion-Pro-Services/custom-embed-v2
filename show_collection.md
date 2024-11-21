@@ -32,6 +32,6 @@ There are predefined [CSS variables](https://developer.mozilla.org/en-US/docs/We
 
 
 ### Example Link
-- [ShowCollection Playground](https://dmvs-apac.github.io/custom-embed-v2/examples/show_collection/)
+- [ShowCollection Playground](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/show_collection/)
 
 
