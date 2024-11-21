@@ -23,11 +23,11 @@ This method can be used to render the player on targeted `HTMLElement`.
 </script>
 ```
 
-This is a [simple playground](https://dmvs-apac.github.io/custom-embed-v2/examples/render_player/).
+This is a [simple playground](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/render_player/).
 
 
 The same function also can be used to render the player for infinite scrolling. Here is the example page
-[infinite scroll](https://dmvs-apac.github.io/custom-embed-v2/examples/infinite_scroll/)
+[infinite scroll](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/infinite_scroll/)
 
 
 ### window["dmcePlayOnMulti"]:
