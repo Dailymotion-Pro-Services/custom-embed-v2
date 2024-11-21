@@ -22,4 +22,4 @@ You can use it with public features, this is an example on how to use it
 ```
 
 ### Example Links
-- [Control API Call with `minWordSearch` and `maxWordSearch`](https://dmvs-apac.github.io/custom-embed-v2/examples/api_call_control/)
+- [Control API Call with `minWordSearch` and `maxWordSearch`](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/api_call_control/)
