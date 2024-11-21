@@ -1,12 +1,12 @@
 # In-video Call to Action
 
-Dailymotion custom embed supports the addition of CTA links in any video. Check our [Demo](https://dmvs-apac.github.io/custom-embed-v2/examples/cta_card/index.html)
+Dailymotion custom embed supports the addition of CTA links in any video. Check our [Demo](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/cta_card/index.html)
 
 ### Start Embedding
 
 To embed players with in-video CTA cards 
-- You need to add `<script type="application/json" id="dm_player_text" >` tag before [Custom embed code for player](https://dmvs-apac.github.io/custom-embed-v2/).
-- Also add `ctaCard` parameters with value `true` in [Custom embed code for player](https://dmvs-apac.github.io/custom-embed-v2/).
+- You need to add `<script type="application/json" id="dm_player_text" >` tag before [Custom embed code for player](https://dailymotion-pro-services.github.io/custom-embed-v2/).
+- Also add `ctaCard` parameters with value `true` in [Custom embed code for player](https://dailymotion-pro-services.github.io/custom-embed-v2/).
 
 Data for in-video CTA card can be set inside `<script type="application/json">` as `JSON` format.
 
@@ -99,4 +99,4 @@ __2) Video level:__ Data can be set for each video.
 - CTA card will not show on PIP (floating player). 
 
 **Example:**
-- [CTA Link Card - playground](https://dmvs-apac.github.io/custom-embed-v2/examples/cta_card/index.html)
+- [CTA Link Card - playground](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/cta_card/index.html)
