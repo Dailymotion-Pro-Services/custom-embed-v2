@@ -23,7 +23,7 @@ This also works with private videos using a `kid` in the `privateVideoId`.
 
 ### Livestream replacement logic:
 
-<img align="left" src="https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" style="max-width: 400px" />
+<img align="left" src="https://dailymotion-pro-services.github.io/custom-embed-v2/examples/livestream/livestream_flow.jpeg" style="max-width: 400px" />
 
 - If the livestream is `onair`, the player will embed the livestream.
 - if the livestream is `offair` and **scheduled**, the player will embed the livestream.
@@ -104,4 +104,4 @@ document.addEventListener("dm-player-create", (e)=>{
 
 **Example:**
 
-- [livestream playground](https://dmvs-apac.github.io/custom-embed-v2/examples/livestream/livestream_playground.html)
+- [livestream playground](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/livestream/livestream_playground.html)
