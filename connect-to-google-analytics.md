@@ -5,7 +5,7 @@
 
 Custom Embed is created on the top of the [PLS player](https://developers.dailymotion.com/player/#player-library-script). You must always connect your Dailymotion player to the GTM script using `DM_GTM_INIT(player)`. [Read more].(https://developers.dailymotion.com/guides/connect-to-google-analytics/#important-for-player-library-script).
 
-With the help of [Events in Custom Embed V2](https://dmvs-apac.github.io/custom-embed-v2/custom_events), you can get the dailymotion player object and call `DM_GTM_INIT(player)` method.
+With the help of [Events in Custom Embed V2](https://dailymotion-pro-services.github.io/custom-embed-v2/custom_events), you can get the dailymotion player object and call `DM_GTM_INIT(player)` method.
 
 ### Example : 
 ```html
