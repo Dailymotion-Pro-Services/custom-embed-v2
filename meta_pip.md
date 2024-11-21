@@ -29,5 +29,5 @@ You can use it with the rest of our public Custom Embed V2 features, this is jus
 For mobile viewport, the player's width in pip is `240px`. Sometimes, it may affect an ad's UI ( such as not showing the skip button). For those use cases, you can use `metaPip="mobileBig"` to have a full-width pip in the mobile viewport. This removes the video metadata next to the PIP. [Check Examples](#example-links).
 
 ### Example Links
-- [metaPip="true"](https://dmvs-apac.github.io/custom-embed-v2/examples/meta_pip/)
-- [metaPip="mobileBig"](https://dmvs-apac.github.io/custom-embed-v2/examples/meta_pip/mobile_big)
+- [metaPip="true"](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/meta_pip/)
+- [metaPip="mobileBig"](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/meta_pip/mobile_big)
