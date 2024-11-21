@@ -3,7 +3,7 @@
 We use mainly [`amp-video-iframe`](https://amp.dev/documentation/components/amp-video-iframe/) AMP components to support AMP page. Please follow the instruction.
 
 ### 1) Host Resources to your server first
-Copy the `html` code below and host the page on your server as `dm-player.html`. Like [dm-player.html](https://srvr.dmvs-apac.com/v2/dm-player.html) used for [Examples](#example-links).
+Copy the `html` code below and host the page on your server as `dm-player.html`. Like [dm-player.html](https://statics.dmcdn.net/c/dm-player.html) used for [Examples](#example-links).
 ```html
   <!DOCTYPE html>
   <html lang="en">
@@ -54,7 +54,7 @@ Copy the `html` code below and host the page on your server as `dm-player.html`.
 
 ### Parameters Available
 
-All `data-param-*` attributes in `amp-video-iframe` tag are added as query parameters to the iframe's src. This helps us to use parameters from [Dailymotion Custom Embed v2](https://dmvs-apac.github.io/custom-embed-v2/).
+All `data-param-*` attributes in `amp-video-iframe` tag are added as query parameters to the iframe's src. This helps us to use parameters from [Dailymotion Custom Embed v2](https://dailymotion-pro-services.github.io/custom-embed-v2/).
 Check below the table for details available parameters
 
 | Name | Type | Description |
@@ -79,5 +79,5 @@ Check below the table for details available parameters
 | data-param-loop | boolean (string) | This param is only accept `true` and `false` |
 
 ### Example Links
-- [AMP Simple Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp/)
-- [AMP Playlist Embed](https://dmvs-apac.github.io/custom-embed-v2/examples/amp/playlist.html)
+- [AMP Simple Embed](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/amp/)
+- [AMP Playlist Embed](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/amp/playlist.html)
