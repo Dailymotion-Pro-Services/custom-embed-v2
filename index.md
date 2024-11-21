@@ -50,9 +50,9 @@ You need to do 2 things to embed the Player.
 | rangeDay | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
 | preVideoTitle | string | A custom section title above the video player embed, i.e. `"See also: Recommended videos"` |
 | showVideoTitle | boolean | Decide if you want to show video title or not, set true if you need to show video title. E.g. `"true"`  |
-| showInfoCard | boolean/string | Info of the video in a card below the video player.the info card contains both video title, description etc. [Learn more](https://dmvs-apac.github.io/custom-embed-v2/info_card) |
-| ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dmvs-apac.github.io/custom-embed-v2/ctacard) |
-| showCollection | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. [Learn More](https://dmvs-apac.github.io/custom-embed-v2/show_collection) |
+| showInfoCard | boolean/string | Info of the video in a card below the video player.the info card contains both video title, description etc. [Learn more](https://dailymotion-pro-services.github.io/custom-embed-v2/info_card) |
+| ctaCard | boolean | To show in-video CTA cards, you must set the value `true`. [Read more](https://dailymotion-pro-services.github.io/custom-embed-v2/ctacard) |
+| showCollection | string | To show the video recommendations playlist outside of the player. It can be set as `right` or `bottom` based on the position of the playlist. By default, the playlist is inside the video player. [Learn More](https://dailymotion-pro-services.github.io/custom-embed-v2/show_collection) |
 | blockKeywords | string[] |  to block keywords, this parameter can be used. To put more than 1 word you can separate by `","` |
 | mute | boolean |  to set player mute option. By default its `false` ( default behaviour : The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
 | fallbackPlaylist | string |  If there is no relevance videos it will fallback to embed specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
@@ -104,7 +104,7 @@ In the sample above for `customConfig` value you realized there are text `%2f`, 
 
 ### Player features:
 - The Player is implemented with [*Page Visibility API*](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API). If a player is `playing` in the active tab/page, the player goes to `pause` if the tab/page is inactive, and vice versa.
-- Custom embed can be utilized to append any manual or dynamic playlist to your pre-set website section. [Learn more](https://dmvs-apac.github.io/custom-embed-v2/recommend_playlist)
+- Custom embed can be utilized to append any manual or dynamic playlist to your pre-set website section. [Learn more](https://dailymotion-pro-services.github.io/custom-embed-v2/recommend_playlist)
 
 ### PIP customisation
 
@@ -164,8 +164,8 @@ The position of PIP can be changed dynamically by changing the CSS while it's ac
 </iframe>
 
 ### Example Links
-- [PIP simple menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_simple_menu/)
-- [PIP overlay menu - Mobile](https://dmvs-apac.github.io/custom-embed-v2/examples/pip_overlay_menu/)
+- [PIP simple menu - Mobile](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/pip_simple_menu/)
+- [PIP overlay menu - Mobile](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/pip_overlay_menu/)
 
 
 
