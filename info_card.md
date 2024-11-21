@@ -45,5 +45,5 @@
 > You must set player settings to `autostart:off` from [Partner's HQ](https://www.dailymotion.com/partner/embed/players) to use the `infocard` with `snippet`.
 
 ### Example Link
-- [Info card Playground](https://dmvs-apac.github.io/custom-embed-v2/examples/info_card/)
+- [Info card Playground](https://dailymotion-pro-services.github.io/custom-embed-v2/examples/info_card/)
 
