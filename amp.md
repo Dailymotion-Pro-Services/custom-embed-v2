@@ -59,7 +59,6 @@ Check below the table for details available parameters
 
 | Name | Type | Description |
 | :---: | :---: | :---: |
-
 | data-param-playerid <br /> `Mandatory` | string | You can get `{PLAYER_ID}` from [Dailymotion partner HQ](https://www.dailymotion.com/partner/x1wzpns/embed/players) in the player tab, inside the embed menu. |
 | data-param-sort <br /> `Mandatory` | string | This will determine which sorting method to use to retrieve a video from your catalog or 3rd parties catalog. An example could be relevance, visited in the last month or most recent. Now you can have more than 1 sorting parameter by adding your next sort param using a comma (don't add space please). List of available values: https://developer.dailymotion.com/api#video-sort-filter |
 | data-param-owners <br /> `Mandatory` | string | You need to put the username of the channels from which the script will search content. If your channel name URL is www.dailymotion.com/channelABC then your username is channelABC. This is case sensitive, meaning channelABC is not the same as Channelabc. To put more than 1 you can separate by `","` |
@@ -75,7 +74,7 @@ Check below the table for details available parameters
 | data-param-keywords | string | Define keywords for the contextual embed. To put more than 1 word you can separate by `","`. E.g. "animal,zoo,birds,nature,wildlife". |
 | data-param-category | string | Content category to filter. List of available categories: https://api.dailymotion.com/channels |
 | data-param-rangeday | number[] | This can be filled if you want to limit videos embedded based on a date range for freshness. It can be 30 days, 1 day, 120 days... You can add more than one value for multiple sort params, which will apply to corresponding sort params. E.g. `"30,0"` |
-| data-param-mute | boolean |  to set player mute option. By default it's false` ( default behaviour: The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )  |
+| data-param-mute | boolean |  to set player mute option. By default it's false` ( default behaviour: The player provides smart mute behaviour, it tries to automatically start the video playback with sound. If this isn’t possible due to browser prevention, there is a fallback mechanism and the player reattempts to play the video but with the sound set to mute )|
 | data-param-fallbackplaylist | string |  If there is no relevance videos it will fallback to embed a specific playlist ( default behaviour : The fallback strategy is to embed recent videos of given channel `owners` )  | 
 | data-param-loop | boolean (string) | This param is only accept `true` and `false` |
 
