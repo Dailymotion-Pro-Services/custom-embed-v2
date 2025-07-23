@@ -53,8 +53,8 @@ To pass the information for PES, use `data-**` attributes of the DM-Video-Collec
 | <b>data-pes-script-id</b> <br /> `Mandatory` | string | To pass DOM id of PES script |
 | <b>data-video-id</b>  | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
 | <b>data-video-id</b>  | string | To add playlist id.|
-| <b>data-tags</b> <br />| string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1 you can separate by ","|
-| <b>data-owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
+| <b>data-tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1 you can separate by ","|
+| <b>data-owners</b> | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>data-num-videos</b>| number | To set number of videos to fetch. By default, it is 7`|
 | <b>data-position</b>| `bottom` or `right` | To set position of the video collection.|
 
@@ -137,11 +137,11 @@ To Pass the information for PLS, use the `dm-render-collection` event along with
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| <b>player</b> <br /> `Mandatory` | Player Object | To pass Player Object for PLS script |
+| <b>player</b> | Player Object | To pass Player Object for PLS script |
 | <b>videoId</b> | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
 | <b>playlistId</b> | string | To add playlistId|
 | <b>tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1, you can separate by ","|
-| <b>owners</b> <br /> `Mandatory` | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
+| <b>owners</b> | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>numOfVideos</b>| number | To set number videos to fetch. By default, it's 7`|
 | <b>position</b>| `buttom` or `right` | To set position of the video collection.|
 
