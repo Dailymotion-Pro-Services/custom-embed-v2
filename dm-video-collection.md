@@ -52,7 +52,7 @@ To pass the information for PES, use `data-**` attributes of the DM-Video-Collec
 | --- | --- | --- |
 | <b>data-pes-script-id</b> <br /> `Mandatory` | string | To pass DOM id of PES script |
 | <b>data-video-id</b>  | string | To add video id. This helps to fetch [relevant videos from API](#relevant-video).|
-| <b>data-video-id</b>  | string | To add playlist id.|
+| <b>data-playlist-id</b>  | string | To add playlist id.|
 | <b>data-tags</b> | string | To add tags to fetch [relevant videos from API](#relevant-video). To put more than 1 you can separate by ","|
 | <b>data-owners</b> | string | The username of the channels from which relevant video will be fetched. To put more than 1, you can separate by ","|
 | <b>data-num-videos</b>| number | To set number of videos to fetch. By default, it is 7`|
