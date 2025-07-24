@@ -3,8 +3,8 @@
 DM-Video-Collection is a javascript plugin to show video recommendations playlist outside of the player with [PES - Player Embed Script](https://developers.dailymotion.com/player/#player-embed-script) and [PLS - Player Library Script](https://developers.dailymotion.com/player/#player-library-script).  It can be set as `right`( [To set right position](#to-set-the-right-position) ) or `bottom` based on the position of the playlist. By default, it is set to `bottom`.
 
 ## Script Link:
-- https://staging.dmvs-apac.com/DM-Video-collection/video-collection.js
-- https://staging.dmvs-apac.com/DM-Video-collection/video-collection.min.js
+- [video-collection.js](https://staging.dmvs-apac.com/DM-Video-collection/video-collection.js)
+- [video-collection.min.js](https://staging.dmvs-apac.com/DM-Video-collection/video-collection.min.js)
 
 ## With PES :
 
